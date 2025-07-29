@@ -1,0 +1,37 @@
+ .article-post {
+  /*font-family: "Rubik", sans-serif;*/
+  font-family: 'Cairo', sans-serif;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  line-height: 1.8;
+  color: #333;
+  /*جعل الصفحة من اليمين لليسار للمقالات العربية*/
+  direction: rtl;
+  text-align: right;
+}
+
+.article-post h2 {
+  color: #5090d0;
+  margin-top: 1.5rem;
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.article-post h1 {
+  color: #528fcc;
+  font-size: x-large;
+  margin-top: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
