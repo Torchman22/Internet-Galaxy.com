@@ -5,6 +5,33 @@
   padding: 0;  
 }
 
+.navbar-scroll {                                         
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.navbar-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* إعدادات العناصر الداخلية */
+.navbar-scroll ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-scroll li {
+  flex: 0 0 auto;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
