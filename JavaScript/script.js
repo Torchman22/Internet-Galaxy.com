@@ -1,53 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {                               //start
-  const navbar = document.querySelector('.navbar');
-  const progress = document.querySelector('.progress');
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
+  const progress = document.querySelector(".progress");
   const contentBelow = navbar.nextElementSibling;
-
+  
   if (contentBelow) {
     const navbarHeight = navbar.offsetHeight;
     contentBelow.style.marginTop = `${navbarHeight}px`;
-     
   }
 
   let lastScrollY = window.scrollY;
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
+    
+    const scrollingDown = currentScrollY > lastScrollY;
+    const scrollingUp = currentScrollY < lastScrollY;
 
-    if (currentScrollY === 0) {
-      navbar.classList.remove('hidden');
-      progress.style.transform = `translateY(${navbar.offsetHeight}px)`;
-    } else if (currentScrollY > lastScrollY) {
-      navbar.classList.add('hidden');
-      progress.style.transform = `translateY(0px)`;
-    } else if (currentScrollY < lastScrollY) {
-      navbar.classList.remove('hidden');
-      progress.style.transform = `translateY(${navbar.offsetHeight}px)`;
+    if (scrollingDown) {
+      navbar.classList.add("hidden");
+      if (progress) progress.style.transform = `translateY(0px)`;
+    } else if (scrollingUp) {
+      navbar.classList.remove("hidden");
+      if (progress) progress.style.transform = `translateY(${navbar.offsetHeight}px)`;
     }
 
     lastScrollY = currentScrollY;
 
-    // تحديث نسبة التقدم
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = Math.floor((scrollTop / docHeight) * 100);
-    progress.style.width = `${scrollPercent}%`;
+    // تحديث شريط التقدم إن وُجد
+    if (progress) {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = Math.floor((scrollTop / docHeight) * 100);
+      progress.style.width = `${scrollPercent}%`;
+    }
   });
-});
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  const progress = document.querySelector(".progress");
-
-  function updateProgressBar() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    progress.style.width = `${scrollPercent}%`;
+  // عند تحميل الصفحة، ضع progress تحت navbar
+  if (progress) {
+    progress.style.transform = `translateY(${navbar.offsetHeight}px)`;
   }
-
-  window.addEventListener("scroll", updateProgressBar);
-});                                                                                                               //end
+});                                                                                                              //end
 
 
 
