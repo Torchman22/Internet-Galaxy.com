@@ -621,3 +621,16 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+
+.progress{                                               
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: #e76c0f; /* أزرق فاتح */
+  z-index: 9999;
+  transition: transform 0.3s ease, width 0.1s ease;
+  margin-top: 0 ;
+  padding-top: 0 ;
+} 
