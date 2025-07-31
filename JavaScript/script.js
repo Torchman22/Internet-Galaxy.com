@@ -1,33 +1,14 @@
-let lastScrollY = window.scrollY;
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-  const currentScrollY = window.scrollY;
-
-  if (currentScrollY === 0) {
-    // المستخدم في أعلى الصفحة → نظهر التولبار بشكل طبيعي
-    navbar.classList.remove('hidden');
-  } else if (currentScrollY > lastScrollY) {
-    // المستخدم يتحرك لأسفل → نخفي التولبار
-    navbar.classList.add('hidden');
-  } else if (currentScrollY < lastScrollY) {
-    // المستخدم يتحرك لأعلى → نظهر التولبار
-    navbar.classList.remove('hidden');
-  }
-
-  lastScrollY = currentScrollY;
-});
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {                               //start
   const navbar = document.querySelector('.navbar');
-  const nextElement = navbar.nextElementSibling;
+  const progress = document.querySelector('.progress');
+  const contentBelow = navbar.nextElementSibling;
 
-  // تعديل العناصر بعد navbar فقط مرة واحدة حسب ارتفاعها
-  if (nextElement) {
+  if (contentBelow) {
     const navbarHeight = navbar.offsetHeight;
-    nextElement.style.marginTop = `${navbarHeight}px`;
+    contentBelow.style.marginTop = `${navbarHeight}px`;
+     
   }
 
-  // التعامل مع التمرير
   let lastScrollY = window.scrollY;
 
   window.addEventListener('scroll', () => {
@@ -35,15 +16,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (currentScrollY === 0) {
       navbar.classList.remove('hidden');
+      progress.style.transform = `translateY(${navbar.offsetHeight}px)`;
     } else if (currentScrollY > lastScrollY) {
       navbar.classList.add('hidden');
+      progress.style.transform = `translateY(0px)`;
     } else if (currentScrollY < lastScrollY) {
       navbar.classList.remove('hidden');
+      progress.style.transform = `translateY(${navbar.offsetHeight}px)`;
     }
 
     lastScrollY = currentScrollY;
+
+    // تحديث نسبة التقدم
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = Math.floor((scrollTop / docHeight) * 100);
+    progress.style.width = `${scrollPercent}%`;
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const progress = document.querySelector(".progress");
+
+  function updateProgressBar() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    progress.style.width = `${scrollPercent}%`;
+  }
+
+  window.addEventListener("scroll", updateProgressBar);
+});                                                                                                               //end
+
 
 
 //the smart email click to open gmail in google chrome.
