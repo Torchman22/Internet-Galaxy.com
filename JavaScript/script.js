@@ -5,14 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const contentBelow = normal_navbar.nextElementSibling;
   const contentBelow2 = mobile_navbar.nextElementSibling;
 
-
   if (contentBelow) {
     const normalNavbarHeight = normal_navbar.offsetHeight;
-     
   }
   if (contentBelow2) {
     const normalNavbarHeight = mobile_navbar.offsetHeight;
-     
   }
 
   let lastScrollY = window.scrollY;
@@ -32,8 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // إظهار الشريط بتحريكه للأسفل
       normal_navbar.style.transform = `translateY(0px)`;
       mobile_navbar.style.transform = `translateY(0px)`;
-      if (progress) progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
-      if (progress) progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
+      if (progress) {
+        if (getComputedStyle(normal_navbar).display !== "none") {
+          progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
+        } else if (getComputedStyle(mobile_navbar).display !== "none") {
+          progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
+        }
+      }
     }
 
     lastScrollY = currentScrollY;
@@ -49,7 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // عند تحميل الصفحة، ضع progress أسفل الشريط
   if (progress) {
-    progress.style.transform = `translateY(${normal_navbar.offsetHeight,mobile_navbar.offsetHeight}px)`;
+    if (getComputedStyle(normal_navbar).display !== "none") {
+      progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
+    } else if (getComputedStyle(mobile_navbar).display !== "none") {
+      progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
+    }
   }
 
   // تفعيل الانتقال السلس للحركة
@@ -57,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   mobile_navbar.style.transition = "transform 0.3s ease";
   if (progress) progress.style.transition = "transform 0.3s ease, width 0.2s ease";
 });
+
 
 
 
@@ -142,6 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
   });
 });
+
 
 
 
