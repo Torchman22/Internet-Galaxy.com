@@ -1,3 +1,5 @@
+ /*Css for Arabic Articles*/
+
  .article-post {
   /*font-family: "Rubik", sans-serif;*/
   font-family: 'Cairo', sans-serif;
@@ -11,7 +13,7 @@
   text-align: right;
 }
 
-.article-post h2 {
+.article-post h2{
   color: #5090d0;
   margin-top: 1.5rem;
 }
@@ -22,16 +24,51 @@
   margin-top: 0.5rem;
 }
 
-.article-post h1 {
+.article-post h1{
   color: #528fcc;
   font-size: x-large;
   margin-top: 1.5rem;
 }
-
+/*img for both [AR, EN]*/
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
+}
+
+
+/*Css for English Articles*/
+ 
+.ENarticle-post {
+  /*font-family: "Rubik", sans-serif;*/
+  font-family: "Rubik", sans-serif;
+  font-size: 18px; /* أو 1rem */
+  line-height: 1.6;
+  margin-bottom: 1rem; /* يعطي تباعد جيد بين الفقرات */
+
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  line-height: 1.8;
+  
+  /*جعل الصفحة من اليمين لليسار للمقالات العربية*/
+  direction: ltr;
+  text-align: left;
+}
+
+.ENarticle-post p,.ENarticle-post ul {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin-bottom: 1rem;
+}
+
+.ENart6icle-post h1 {
+  color: #528fcc;
+  font-weight: 1100; /* وهو ما يعادل bold تقريباً */
+  font-size: x-large;
+  margin-top: 1.5rem;
 }
