@@ -2,56 +2,68 @@ document.addEventListener("DOMContentLoaded", () => {
   const normal_navbar = document.querySelector(".normal_navbar");
   const mobile_navbar = document.querySelector(".mobile_navbar");
   const progress = document.querySelector(".progress");
+  const contentBelow = normal_navbar.nextElementSibling;
+  const contentBelow2 = mobile_navbar.nextElementSibling;
 
-  const updateProgressPosition = () => {
-    if (progress) {
-      const activeNavbar =
-        getComputedStyle(normal_navbar).display !== "none"
-          ? normal_navbar
-          : mobile_navbar;
-      progress.style.transform = `translateY(${activeNavbar.offsetHeight}px)`;
+  /*if (contentBelow) {
+    const normalNavbarHeight = normal_navbar.offsetHeight;
+  }*/
+   //الكود الذي يقوم بعمل مسافة بمقدار ال navbar .
+  if (contentBelow2) {
+    const mobileNavbarHeight = mobile_navbar.offsetHeight;
+    contentBelow2.style.marginTop = `${mobileNavbarHeight}px`; // ✅ إضافة المسافة
+  }
+
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    const scrollingDown = currentScrollY > lastScrollY;
+    const scrollingUp = currentScrollY < lastScrollY;
+
+    if (scrollingDown) {
+      // إخفاء الشريط بتحريكه للأعلى
+      normal_navbar.style.transform = `translateY(-${normal_navbar.offsetHeight}px)`;
+      mobile_navbar.style.transform = `translateY(-${mobile_navbar.offsetHeight}px)`;
+      if (progress) progress.style.transform = `translateY(0px)`;
+    } else if (scrollingUp) {
+      // إظهار الشريط بتحريكه للأسفل
+      normal_navbar.style.transform = `translateY(0px)`;
+      mobile_navbar.style.transform = `translateY(0px)`;
+      if (progress) {
+        if (getComputedStyle(normal_navbar).display !== "none") {
+          progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
+        } else if (getComputedStyle(mobile_navbar).display !== "none") {
+          progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
+        }
+      }
     }
-  };
 
-  const updateProgressWidth = () => {
+    lastScrollY = currentScrollY;
+
+    // تحديث شريط التقدم
     if (progress) {
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercent = Math.floor((scrollTop / docHeight) * 100);
       progress.style.width = `${scrollPercent}%`;
     }
-  };
+  });
 
-  // تعيين موضع progress تحت الشريط عند تحميل الصفحة
-  updateProgressPosition();
+  // عند تحميل الصفحة، ضع progress أسفل الشريط
+  if (progress) {
+    if (getComputedStyle(normal_navbar).display !== "none") {
+      progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
+    } else if (getComputedStyle(mobile_navbar).display !== "none") {
+      progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
+    }
+  }
 
-  // تفعيل الانتقال السلس
+  // تفعيل الانتقال السلس للحركة
   normal_navbar.style.transition = "transform 0.3s ease";
   mobile_navbar.style.transition = "transform 0.3s ease";
   if (progress) progress.style.transition = "transform 0.3s ease, width 0.2s ease";
-
-  let lastScrollY = window.scrollY;
-
-  window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
-    const scrollingDown = currentScrollY > lastScrollY;
-    const scrollingUp = currentScrollY < lastScrollY;
-
-    if (scrollingDown) {
-      normal_navbar.style.transform = `translateY(-100%)`;
-      mobile_navbar.style.transform = `translateY(-100%)`;
-      if (progress) progress.style.transform = `translateY(0px)`;
-    } else if (scrollingUp) {
-      normal_navbar.style.transform = `translateY(0px)`;
-      mobile_navbar.style.transform = `translateY(0px)`;
-      updateProgressPosition();
-    }
-
-    updateProgressWidth();
-    lastScrollY = currentScrollY;
-  });
-
-  window.addEventListener("resize", updateProgressPosition);
 });
 
 
