@@ -2,40 +2,84 @@ document.addEventListener("DOMContentLoaded", () => {
   const normal_navbar = document.querySelector(".normal_navbar");
   const mobile_navbar = document.querySelector(".mobile_navbar");
   const progress = document.querySelector(".progress");
-  const contentBelow = normal_navbar.nextElementSibling;
-  const contentBelow2 = mobile_navbar.nextElementSibling;
 
+  const updateProgressPosition = () => {
+    if (progress) {
+      const activeNavbar =
+        getComputedStyle(normal_navbar).display !== "none"
+          ? normal_navbar
+          : mobile_navbar;
+      progress.style.transform = `translateY(${activeNavbar.offsetHeight}px)`;
+    }
+  };
+
+  const updateProgressWidth = () => {
+    if (progress) {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = Math.floor((scrollTop / docHeight) * 100);
+      progress.style.width = `${scrollPercent}%`;
+    }
+  };
+
+  // تعيين موضع progress تحت الشريط عند تحميل الصفحة
+  updateProgressPosition();
+
+  // تفعيل الانتقال السلس
+  normal_navbar.style.transition = "transform 0.3s ease";
+  mobile_navbar.style.transition = "transform 0.3s ease";
+  if (progress) progress.style.transition = "transform 0.3s ease, width 0.2s ease";
+
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const scrollingDown = currentScrollY > lastScrollY;
+    const scrollingUp = currentScrollY < lastScrollY;
+
+    if (scrollingDown) {
+      normal_navbar.style.transform = `translateY(-100%)`;
+      mobile_navbar.style.transform = `translateY(-100%)`;
+      if (progress) progress.style.transform = `translateY(0px)`;
+    } else if (scrollingUp) {
+      normal_navbar.style.transform = `translateY(0px)`;
+      mobile_navbar.style.transform = `translateY(0px)`;
+      updateProgressPosition();
+    }
+
+    updateProgressWidth();
+    lastScrollY = currentScrollY;
+  });
+
+  window.addEventListener("resize", updateProgressPosition);
+});
+
+
+//كود التعديل على navbar في الحالة الطبيعية بدون وجود قائمة لغات 
+document.addEventListener("DOMContentLoaded", () => {
+  const normal_navbar = document.querySelector(".navbar");
+  const progress = document.querySelector(".progress");
+
+  // ✅ أضف هذا الجزء لعمل إزاحة للمحتوى
+  const contentBelow = normal_navbar.nextElementSibling;
   if (contentBelow) {
-    const normalNavbarHeight = normal_navbar.offsetHeight;
-  }
-  if (contentBelow2) {
-    const normalNavbarHeight = mobile_navbar.offsetHeight;
+    const navbarHeight = normal_navbar.offsetHeight;
+    contentBelow.style.marginTop = `${navbarHeight}px`;
   }
 
   let lastScrollY = window.scrollY;
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
-
     const scrollingDown = currentScrollY > lastScrollY;
     const scrollingUp = currentScrollY < lastScrollY;
 
     if (scrollingDown) {
-      // إخفاء الشريط بتحريكه للأعلى
       normal_navbar.style.transform = `translateY(-${normal_navbar.offsetHeight}px)`;
-      mobile_navbar.style.transform = `translateY(-${mobile_navbar.offsetHeight}px)`;
       if (progress) progress.style.transform = `translateY(0px)`;
     } else if (scrollingUp) {
-      // إظهار الشريط بتحريكه للأسفل
       normal_navbar.style.transform = `translateY(0px)`;
-      mobile_navbar.style.transform = `translateY(0px)`;
-      if (progress) {
-        if (getComputedStyle(normal_navbar).display !== "none") {
-          progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
-        } else if (getComputedStyle(mobile_navbar).display !== "none") {
-          progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
-        }
-      }
+      if (progress) progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
     }
 
     lastScrollY = currentScrollY;
@@ -49,22 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // عند تحميل الصفحة، ضع progress أسفل الشريط
+  // عند تحميل الصفحة، اضبط مكان progress
   if (progress) {
-    if (getComputedStyle(normal_navbar).display !== "none") {
-      progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
-    } else if (getComputedStyle(mobile_navbar).display !== "none") {
-      progress.style.transform = `translateY(${mobile_navbar.offsetHeight}px)`;
-    }
+    progress.style.transition = "transform 0.3s ease, width 0.2s ease";
+    progress.style.transform = `translateY(${normal_navbar.offsetHeight}px)`;
   }
 
-  // تفعيل الانتقال السلس للحركة
   normal_navbar.style.transition = "transform 0.3s ease";
-  mobile_navbar.style.transition = "transform 0.3s ease";
-  if (progress) progress.style.transition = "transform 0.3s ease, width 0.2s ease";
 });
-
-
 
 
 //the smart email click to open gmail in google chrome.
