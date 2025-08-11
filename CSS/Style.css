@@ -20,7 +20,16 @@
   width: 100%;
 }
 
-.navbar-scroll::-webkit-scrollbar {
+.navbar {
+  overflow-x: auto;        /* يسمح بالتمرير الأفقي */
+  overflow-y: visible;     /* للسماح للقائمة المنسدلة بالظهور */
+  white-space: nowrap;     /* يمنع العناصر من النزول لسطر جديد */
+  -webkit-overflow-scrolling: touch; /* تمرير سلس في الموبايل */
+  scrollbar-width: none;   /* إخفاء شريط التمرير في فايرفوكس */
+}
+
+.navbar-scroll::-webkit-scrollbar,
+.navbar::-webkit-scrollbar {
   display: none;
 }
 
@@ -33,7 +42,7 @@
   list-style: none;
 }
 
-.navbar-scroll li {
+.navbar-scroll li, .navbar li {
   flex: 0 0 auto;
 }                                                           
 
@@ -44,7 +53,7 @@
 }                                                                         /*end*/
 
 
-.normal_navbar,.mobile_navbar,.navbar {
+.normal_navbar,.mobile_navbar {
   overflow: visible; /* مهم جداً */                                     /*start*/
   position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                       /*end*/
   list-style-type: none;
@@ -55,6 +64,22 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.navbar {
+  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                       /*end*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/                                                  /**/
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar .spacer {
+  flex: 1; /* ياخذ المساحة الفارغة ويدفع العناصر اللي بعده لليمين */
 }
 
 .normal_navbar li,.mobile_navbar li,.navbar li {
@@ -94,7 +119,6 @@
 .navbar.hidden {
   transform: translateY(-100%);
 }
-
 
 /* تحسين صندوق البحث */
 .search-container {
@@ -882,4 +906,5 @@ body {
 } 
  
  
+
 
