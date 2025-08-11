@@ -252,7 +252,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px 0;
+  padding: 20px 0;  
 }
 
 /* صورة المقال */
@@ -345,6 +345,7 @@ body {
   padding: 0 20px;
 }
 
+/*هذا لصفحة Articles لانه يوجد نفسه فوق ل Programs*/
 .article-box {
   background-color: white;
   padding: 20px;
@@ -353,6 +354,7 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   border: 1px solid #ddd;
   transition: box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
 .article-box:hover {
@@ -1001,6 +1003,7 @@ body {
     overflow: visible; /* يمنع النص من التداخل مع الصورة */
   }
 }
+
 
 
 
