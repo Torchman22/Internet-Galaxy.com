@@ -261,6 +261,7 @@ body {
 /* محتوى المقال */
 .article-content {
   flex: 1;
+  padding-top: 12px; /* أو أي قيمة تناسبك */
 }
 
 .article-content h2 {
@@ -906,5 +907,6 @@ body {
 } 
  
  
+
 
 
