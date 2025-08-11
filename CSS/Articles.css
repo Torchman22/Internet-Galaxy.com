@@ -72,3 +72,126 @@ img {
   font-size: x-large;
   margin-top: 1.5rem;
 }
+
+
+/*الجزء الخاص بجعل الصورة صغيرة في الوضع الكبير وكبيرة في الصغير*/
+.responsive-img {
+  display: block;
+  width: 50%;       /* على الشاشات الكبيرة */
+  max-width: 100%;  /* يمنعها من أن تتجاوز الحجم الفعلي */
+  height: auto;     /* يحافظ على النسبة */
+  margin: 0 auto;   /* لتوسيط الصورة */
+}
+
+/* على الشاشات الصغيرة مثل الهاتف */
+@media (max-width: 768px) {
+  .responsive-img {
+    width: 100%;
+  }
+}
+
+/*التعديل على زر التحميل*/
+.download-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 25px;
+}
+
+.download-btn {
+  background-color: #28a745; /* أخضر احترافي */
+  color: white;
+  font-size: 1.1rem;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838; /* أخضر أغمق عند المرور */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.download-title-ar {
+  font-family: 'Cairo', sans-serif;
+}
+
+.download-title-en {
+  font-family: Arial, sans-serif;
+}
+
+
+/*التعديل الخاص ب نسبة صفحة التحميل والزر*/
+.download-wait {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: 'Cairo', sans-serif;
+}
+
+.progress-circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  stroke-dasharray: 427; /* محيط الدائرة = 2πr */
+  stroke-dashoffset: 427;
+  stroke-width: 12; /* زيادة السماكة */
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem; /* أكبر */
+  font-weight: 900; /* أوضح وأسمك */
+  color: #333; /* لون أوضح */
+}
+
+.download-btn {
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+/*التعديل على صورة البرامج في صفحة programs*/
+.article-image {
+  outline: 3px solid orange;   /* الحافة البرتقالية خارج الصورة */
+  outline-offset: -3px;        /* تقريبها لتكون ملاصقة للصورة */
+  box-sizing: border-box;      /* يحافظ على المقاسات */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.article-box-link:hover .article-image {
+  transform: scale(1.03); /* تكبير مع الحافة */
+}
+
+
