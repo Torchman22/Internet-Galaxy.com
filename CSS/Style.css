@@ -6,6 +6,11 @@
   overflow-x: hidden;                                                              
 }
 
+/*تحديد حد ادني للfooter مع الجسم كي لا يوجد فراغ بالاسفل*/
+.content-layout {
+    min-height: calc(80vh - 150px); /* 150px مجموع ارتفاع الهيدر + الفوتر */
+}
+
 .navbar-scroll {
   overflow: visible; /* مهم جداً */                                     
   position: relative; /* ضروري للتعامل مع القائمة المنسدلة */                                                            
@@ -996,6 +1001,7 @@ body {
     overflow: visible; /* يمنع النص من التداخل مع الصورة */
   }
 }
+
 
 
 
