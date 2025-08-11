@@ -7,7 +7,7 @@
 }
 
 .navbar-scroll {
-  overflow: visible; /* مهم جداً */                                     /*start*/
+  overflow: visible; /* مهم جداً */                                     
   position: relative; /* ضروري للتعامل مع القائمة المنسدلة */                                                            
   display: flex;
   justify-content: flex-start;
@@ -46,20 +46,20 @@
   flex: 0 0 auto;
 }                                                           
 
-.mobile_navbar {                                                          /*start*/
+.mobile_navbar {                                                          
   position: static; /* 👈 أو ابقها relative إذا احتجت ذلك فقط */
   overflow: visible; /* 👈 مهم جداً للسماح بخروج العناصر */
   z-index: 1000;
-}                                                                         /*end*/
+}                                                                         
 
 
 .normal_navbar,.mobile_navbar {
-  overflow: visible; /* مهم جداً */                                     /*start*/
-  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                       /*end*/
+  overflow: visible; /* مهم جداً */                                     
+  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                    
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/                                                  /**/
+  /*overflow: hidden;*/                                                 
   background-color: #333;
   display: flex;
   align-items: center;
@@ -67,11 +67,11 @@
 }
 
 .navbar {
-  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                       /*end*/
+  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                        
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/                                                  /**/
+  /*overflow: hidden;*/                                                
   background-color: #333;
   display: flex;
   align-items: center;
@@ -122,7 +122,7 @@
 
 /* تحسين صندوق البحث */
 .search-container {
-  padding-right: 20px;                                        /* */
+  padding-right: 20px;                                     
   display: flex;
   align-items: center;
 }
@@ -906,7 +906,73 @@ body {
   background-repeat: no-repeat;
 } 
  
+/*التعديل على البلوك بما يحتويه في صفحة programs*/
+.article-box-link {
+  display: block;         /* يجعل الرابط يغطي البلوك بالكامل */
+  text-decoration: none;  /* يزيل الخط تحت النص */
+  color: inherit;         /* يحافظ على لون النص الأصلي */
+}
+
+.article-box-link:hover .article-image {
+  transform: scale(1.03); /* تكبير خفيف عند المرور */
+  transition: transform 0.3s ease;
+}
+
+.article-box {
+  cursor: pointer;        /* يعطي شعور أنه قابل للنقر */
+}
+
+.article-box-link {
+  text-decoration: none; /* إزالة الخط في الحالة العادية */
+}
+
+.article-box-link h2 {
+  transition: color 0.3s ease; /* تأثير ناعم */
+}
+
+.article-box-link:visited h2 {
+  color: #555555; /* العنوان يصبح رمادي بعد الزيارة */
+  text-decoration: none; /* بدون خط */
+}
+
+
+.article-box-link.visited .article-box {
+  background-color: rgba(246, 243, 243, 0.885); /* خلفية رمادي فاتح */
+}
  
+
+@media (max-width: 768px) {
+  .article-box {
+    display: block;
+    flex-wrap: nowrap;          /* النص بجانب الصورة دائمًا */
+    align-items: flex-start;
+    direction: rtl;          /* النص من اليمين لليسار */
+    text-align: right;
+    padding-right: 10px;     /* مسافة من جهة اليمين للصورة */
+    padding-bottom: 10px;        /* محاذاة النص لليمين */
+  }
+
+  .article-image {
+    width: 120px;               /* عرض ثابت بالبكسل */
+    min-width: 120px;           /* يمنع التصغير */
+    height: auto;
+    float: left;
+    flex-shrink: 0;             /* لا يتقلص */
+    margin-right: 10px;
+    
+  }
+
+  .article-content {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+   .article-content {
+    overflow: visible; /* يمنع النص من التداخل مع الصورة */
+  }
+}
+
+
 
 
 
