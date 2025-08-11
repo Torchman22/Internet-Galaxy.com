@@ -585,7 +585,7 @@ body {
   margin: 0px 5px;
 }
 
-/*articles view in the home site*/
+/* articles view in the home site */
 .article-preview {
   display: flex;
   align-items: center;
@@ -605,10 +605,14 @@ body {
 }
 
 .article-preview img.article-img {
-  width: 260px;
-  height: 160px;
-  object-fit: cover;
+  max-width: 260px;
+  max-height: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 10px;
+  background-color: #fff;
+  display: block;
 }
 
 .article-text {
@@ -636,6 +640,27 @@ body {
 .article-preview.right-img {
   flex-direction: row-reverse;
 }
+
+/* جعل التصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .article-preview {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .article-preview img.article-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* يملأ المساحة بدون فراغات */
+    max-height: none; /* إزالة الحد الأقصى للارتفاع */
+  }
+
+  .article-text {
+    padding: 1rem 0 0;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -971,6 +996,7 @@ body {
     overflow: visible; /* يمنع النص من التداخل مع الصورة */
   }
 }
+
 
 
 
