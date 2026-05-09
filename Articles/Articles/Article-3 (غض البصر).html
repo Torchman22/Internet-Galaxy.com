@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">                                   <!--new-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ⭐ هام: hreflang.js يجب أن يكون هنا في <head> ⭐ -->
+        <script src="/js/hreflang.js"></script>                                                                  <!--new-->
   
-  <!-- تحسين محركات البحث -->
-  <title>الأسرار الخفية لغض البصر وفوائده النفسية والعقلية</title>
-  <meta name="description" content="اكتشف الأسرار العظيمة لغض البصر وفوائده النفسية والعقلية، وتأثيره الحقيقي على حياة الإنسان كما أمر به الإسلام.">
-  <meta name="keywords" content="غض البصر, فوائد غض البصر, الإسلام, الصحة النفسية, العقل الباطن, الشهوات, الطمأنينة, علاج التفكير, صفاء نفسي, مقاومة الوساوس">
-  <meta name="author" content="Ahmed Trochman">
+  <!-- Page Meta Information -->
+<meta name="article-id" content="article4">    <!--ضروري كتابتها لتساعد على اختيار الترجمة الصحيحة حسب قيمة content الذي حددتها هنا وفي ملفات جايسون نفس الاسم-->
+<title></title>
+<meta name="description" content= "">
+<meta name="keywords" content= "">
+<meta name="author" content="Ahmed Trochman">
+<meta name="publisher" content="Internet Galaxy">  
   
   <!-- الروابط الخارجية -->
   <link rel="stylesheet" href="../../CSS/Style.css">
@@ -18,7 +23,7 @@
   <!-- تحميل خط عربي -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
+   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TB9434K390"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -27,33 +32,108 @@
 
   gtag('config', 'G-TB9434K390');
 </script>
+
 </head>
 <body>
-  <div class="progress"></div>
-  <!--navbar and logo-->
- <ul class="navbar">                                            
-  <li><div class="logo-box1">IG</div></li>       
-  <li><a href="../../">Home</a></li>
-  <li><a href="../../Programs.html">Programs</a></li>
-  <li><a href="../../Articles.html">Articles</a></li>
-  <li><a href="../../About.html">About</a></li>
- 
-   <li class="spacer"></li> <!-- أضف هذا السطر -->
+    
+  <div class="progress"></div>   
+
+
+  <!--navbar and logo-->                                                                                          <!--start-->
+ <!-- الشريط العلوي في الوضع الطبيعي -->
+<ul class="normal_navbar">
+
+  <li><div class="logo-box1">IG</div></li>
+
+  <li><a href="../../index.html" data-lang="home"></a></li>                                
+  <li><a href="../../Programs.html" data-lang="programs"></a></li>
+  <li><a href="../../Articles.html" data-lang="articles"></a></li>
+  <li><a href="../../About.html" data-lang="about"></a></li>
+
+
+
+  <li class="lang-menu"> 
+  <div class="selected-lang" id="current-lang"></div> 
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
 
   <li class="search-container">
     <div class="search-box">
-      <input type="text" placeholder="Search..." name="search">
+      <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
       <span class="search-icon">🎯</span>
     </div>
   </li>
-</ul>
+</ul>                                                              
 
+
+
+<!-- الموبايل - الشريط العلوي للوضع الصغير -->
+<div class="mobile_navbar">
+  <div class="navbar-scroll">
+    <ul>
+
+      <li><div class="logo-box1-2">IG</div></li>
+
+      <li><a href="../../index.html" data-lang="home"></a></li>
+      <li><a href="../../Programs.html" data-lang="programs"></a></li>
+      <li><a href="../../Articles.html" data-lang="articles"></a></li>
+      <li><a href="../../About.html" data-lang="about"></a></li>
+
+
+      <li class="lang-menu2"> 
+  <div class="selected-lang2" id="current-lang-mobile"></div>
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
+      <li class="search-container">
+        <div class="search-box">
+          <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
+          <span class="search-icon">🎯</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>                                                                                                                             <!--end-->
 
     <!-- تخطيط المحتوى مع الأعمدة والفاصل -->
   <div class="content-layout">
       <aside class="ad-column ad-left">
         <a href="https://example.com">
-            <img src="Images/long image/Don't limit your dreams.jpeg" alt="إعلان" style="width: 100%; border-radius: 6px;">
+            <img src="../../Images/long image/Don't limit your dreams.jpeg" alt="إعلان" style="width: 100%; border-radius: 6px;">                            <!--new-->
         </a>
       </aside>
 
@@ -63,58 +143,58 @@
 
   <main class="main-area">
   <article class="article-post">
-    <header>
-      <h1 class="main-title">الأسرار العظيمة لغض البصر وفوائده الخفية</h1>
-      
-      <!--حل مشكلة عدم ترتيب الجملة بسبب تعدد اللغة والرموز-->
-      <p class="article-meta" dir="rtl">
-        <span>✍️ بقلم</span>
-        <span dir="ltr" style="display: inline-block;">Ahmed Trochman</span>
-        <span> | 🗓️ </span>
-        <span>24 يوليو 2025</span>
-      </p>
+    <header>                                                                                             <!--start-->
+      <h1 class="main-title" data-lang="article3_title"></h1>
 
-      <img src="images/A3/EeuQVGPWoAAH3bP.png" alt="تعبير عن غض البصر" class="main-image">
-    </header>
+<!--حل مشكلة عدم ترتيب الجملة بسبب تعدد اللغة والرموز-->
+<p class="article-meta" dir="rtl">
+  <span data-lang="article_author"></span>
+  <span dir="ltr" style="display: inline-block;">Ahmed Trochman</span>
+  <span> | 🗓️ </span>
+  <span data-lang="article3_date"></span>
+</p>
 
-    <section>
-      <h2>مقدمة</h2>
-      <p>غض البصر ليس مجرد توجيه ديني بل هو باب عظيم من أبواب الطمأنينة العقلية والنفسية. أمر به الإسلام وأوصى به الرسول ﷺ لحكمة عظيمة تتجاوز اللحظة العابرة للنظر. في هذا المقال نكشف لك الأسرار العظيمة والخفية التي لا يعرفها كثيرون عن غض البصر، وتأثيره الحقيقي على حياة الإنسان.</p>
-    </section>
+<img src="images/A3/EeuQVGPWoAAH3bP.png" alt="تعبير عن غض البصر" class="main-image">
+</header>
 
-    <section>
-      <h2>ما الذي يحدث عند عدم غض البصر؟</h2>
-      <p>عند النظر إلى صور أو مشاهد غير لائقة، تُخزن هذه الصور في العقل الباطن. يستخدمها الشيطان لاحقًا ليعيد تذكير الإنسان بها في لحظات ضعفه، مما يسبب إعادة التخيل والتفكير المستمر، وقد يؤدي إلى الانجراف وراء الشهوات والوساوس والتعلق بهذه الصور عقليًا وعاطفيًا.</p>
-      <img src="images/A3/2be1ce_deb8b98d61874ef9bbf278ad03f1471c~mv2.avif" alt="أثر الصور في العقل" class="section-image">
-    </section>
+<section>
+  <h2 data-lang="article3_intro_title"></h2>
+  <p data-lang="article3_intro_desc"></p>
+</section>
 
-    <section>
-      <h2>الفوائد العظيمة لغض البصر</h2>
-      <ul>
-        <li>إغلاق الباب الذي يدخل منه الشيطان.</li>
-        <li>راحة عقلية ونفسية نتيجة تقليل التفكير المفرط في المحرمات.</li>
-        <li>حماية خلايا الدماغ من الاستنزاف الذهني والتشتيت.</li>
-        <li>زيادة التركيز في الدراسة والعمل وتقوية الحفظ والاستيعاب.</li>
-        <li>صفاء داخلي واستقرار عاطفي بعيدًا عن التقلبات النفسية الناتجة عن الصور المثيرة.</li>
-      </ul>
-      <img src="images/A3/GettyImages-1134465736_hero-1024x575.webp" alt="راحة نفسية من غض البصر" class="section-image">
-    </section>
+<section>
+  <h2 data-lang="article3_sec1_title"></h2>
+  <p data-lang="article3_sec1_desc"></p>
+  <img src="images/A3/2be1ce_deb8b98d61874ef9bbf278ad03f1471c~mv2.avif" alt="أثر الصور في العقل" class="section-image">
+</section>
 
-    <section>
-      <h2>غض البصر للنساء أيضًا</h2>
-      <p>كما يُطلب من الرجال غض البصر، يُطلب من النساء أيضًا عدم التعلق بالشكل الخارجي للشباب أو التفكير المفرط فيهم، لأن نفس آلية التكرار والوسوسة الشيطانية تنطبق على الطرفين. فغض البصر يحمي القلب والعقل معًا، للرجل والمرأة على حد سواء.</p>
-      <img src="images/A3/How-to-Draw-Closed-Eyes-RFA-Step-10_5.jpg.webp" alt="غض البصر للمرأة" class="section-image">
-    </section>
+<section>
+  <h2 data-lang="article3_sec2_title"></h2>
+  <ul>
+    <li data-lang="article3_sec2_li1"></li>
+    <li data-lang="article3_sec2_li2"></li>
+    <li data-lang="article3_sec2_li3"></li>
+    <li data-lang="article3_sec2_li4"></li>
+    <li data-lang="article3_sec2_li5"></li>
+  </ul>
+  <img src="images/A3/GettyImages-1134465736_hero-1024x575.webp" alt="راحة نفسية من غض البصر" class="section-image">
+</section>
 
-    <section>
-      <h2>لماذا أمرنا الرسول بغض البصر؟</h2>
-      <p>قال الله تعالى: <strong>"وما آتاكم الرسول فخذوه وما نهاكم عنه فانتهوا"</strong> [الحشر: 7]. لم يشرح النبي ﷺ كل شيء بالتفصيل لأن في اتباع أوامره الخير كله، وغض البصر أحد تلك الأوامر التي تحمل في طياتها منافع عظيمة لا ندركها إلا بالتجربة.</p>
-    </section>
+<section>
+  <h2 data-lang="article3_sec3_title"></h2>
+  <p data-lang="article3_sec3_desc"></p>
+  <img src="images/A3/How-to-Draw-Closed-Eyes-RFA-Step-10_5.jpg.webp" alt="غض البصر للمرأة" class="section-image">
+</section>
 
-    <footer class="article-footer">
-      <p>📌 لمزيد من الفوائد حول غض البصر يمكنك قراءة مقال <a href="https://islamqa.info/ar/answers/20229" target="_blank">حكم غض البصر وفوائده</a> من موقع الإسلام سؤال وجواب.</p>
-      <p>🎁 دعوة لك: <strong>"ربنا يرزقك بفرحة وتعويض عن كل حزن وألم في حياتك يتعجب منه الخلائق، فهو الكريم العظيم"</strong>، قل آمين 🙏</p>
-    </footer>
+<section>
+  <h2 data-lang="article3_sec4_title"></h2>
+  <p data-lang="article3_sec4_desc"></p>
+</section>
+
+<footer class="article-footer">
+  <p data-lang="article3_footer_note"></p>
+  <p data-lang="article3_footer_dua"></p>
+</footer>                                                                                        <!--end-->
   </article>
 </main>
 
@@ -124,7 +204,7 @@
 
   <aside class="ad-column ad-right">
     <a href="https://example.com">
-    <img src="Images/long image/Don't limit your dreams.jpeg" alt="إعلان" style="width: 100%; border-radius: 6px;">
+    <img src="../../Images/long image/Don't limit your dreams.jpeg" alt="إعلان" style="width: 100%; border-radius: 6px;">                 <!--new-->
   </a>
   </aside>
   </div>
@@ -143,16 +223,16 @@
   <div class="footer-divider"></div>
 
   <div class="footer-right">
-    <div class="footer-links">
-      <a href="../../">Home</a>
-      <a href="../../Programs.html">Programs</a>
-      <a href="../../Articles.html">Articles</a>
-    </div>
-    <div class="footer-links">
-      <a href="../../About.html">About</a>
-      <a href="../../About.html">Contact</a>
-    </div>
-  </div>
+    <div class="footer-links">                                                              <!--start-->
+  <a href="../../index.html" data-lang="home"></a>                                    
+  <a href="../../Programs.html" data-lang="programs"></a>
+  <a href="../../Articles.html" data-lang="articles"></a>
+</div> 
+
+<div class="footer-links"> 
+  <a href="../../About.html" data-lang="about"></a>
+  <a href="../../About.html" data-lang="contact"></a>                                             
+</div>                                                                                       
 </footer>
 
 <div class="footerBottom">
@@ -161,11 +241,10 @@
 
 
         <!-- ملف JavaScript في نهاية الصفحة لتحسين الأداء -->
-        <script src="../../JavaScript/script.js"></script>
+        <script src="../../JavaScript/script.js"></script>                                             
 
         <script src="../../JavaScript/Articles.js"></script>
+
+        <script src="../../JavaScript/lang.js"></script>                                                           <!--end-->
 </body>
 </html>
-
-
-
