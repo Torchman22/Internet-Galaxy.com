@@ -63,3 +63,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// الجزء الخاص باخفاء واظهار قسم التحميل في مقالة كيفية التوقف عن العادة السرية.                                     //start
+// اللغات المتوفر لها PDF فقط
+const AVAILABLE_PDF_LANGS = ["ar", "en"];
+ 
+const downloadSection = document.getElementById("download-section");
+
+function updateDownloadLinks(lang) {
+  // إظهار أو إخفاء قسم التحميل
+  if (downloadSection) {
+    if (AVAILABLE_PDF_LANGS.includes(lang)) {
+      downloadSection.style.display = "block";
+    } else {
+      downloadSection.style.display = "none";
+    }
+  }
+
+}
+
+// تصدير الدالة لاستخدامها من الخارج (إذا أردت)
+window.updateDownloadLinks = updateDownloadLinks;
+
+// تشغيل أول مرة عند تحميل الصفحة
+updateDownloadLinks(currentLang);  
+
+
+
+
