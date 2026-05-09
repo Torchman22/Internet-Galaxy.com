@@ -1,0 +1,285 @@
+{
+  "home": "Inicio",
+  "programs": "Programas",
+  "articles": "Artículos",
+  "about": "Acerca de",
+  "contact": "Contacto",
+  "search_placeholder": "Buscar...",
+
+  "website_address": "Bienvenido a la galaxia de Internet",
+
+  "topics": "Temas :",
+
+  "_programs": "Programas :",
+
+  "_articles": "Artículos :",
+
+  "_about": "Acerca de :",
+
+
+
+
+"Articles-SEO": "الترجمة التالية خاصة بمحركات البحث في قسم head",
+  "article1": {
+    "title": "Un método comprobado para dejar la masturbación en solo 7 días",
+    "description": "Una guía práctica y comprobada para dejar la masturbación en 7 días cambiando los patrones de pensamiento, reduciendo los desencadenantes y mejorando el estilo de vida.",
+    "keywords": "masturbación, dejar la masturbación, daños de la masturbación, efectos de la masturbación, superar la adicción al porno, significado de la masturbación, efectos físicos de la masturbación, efectos en la salud de la masturbación, cómo dejar la masturbación, masturbación en chicas, cómo controlar la masturbación"
+},
+
+"article2": {
+    "title": "Daños del tabaco en la salud y la sociedad | Artículos de concienciación",
+    "description": "Conozca los daños del tabaco en la salud, lo social y lo psicológico, y cómo prevenirlos, a través de un artículo completo y simplificado.",
+    "keywords": "tabaco, daños del tabaco, salud, sociedad, prevención del tabaquismo, artículos de concienciación, salud pública"
+},
+
+"article3": {
+    "title": "Las mejores formas de ganar dinero en línea para principiantes (Guía completa 2026)",
+    "description": "Descubra las mejores formas de ganar dinero en línea para principiantes en 2025, incluyendo freelancing, blogs, marketing de afiliación, comercio electrónico y consejos para el éxito.",
+    "keywords": "ganar dinero en línea, freelancing, ganar dinero para principiantes, marketing de afiliación, creación de contenido, comercio electrónico, ganar dinero con blogs, guía para ganar dinero 2025, métodos fáciles para ganar dinero, trabajo remoto, ingresos pasivos"
+},
+
+"article4": {
+    "title": "Los secretos ocultos de bajar la mirada y sus beneficios psicológicos y mentales",
+    "description": "Descubre los grandes secretos de bajar la mirada y sus beneficios psicológicos y mentales, y su impacto real en la vida humana como lo ordenó el Islam.",
+    "keywords": "bajar la mirada, beneficios de bajar la mirada, Islam, salud mental, mente subconsciente, deseos, tranquilidad, terapia del pensamiento, claridad mental, resistir obsesiones"
+},
+
+"article5": {
+    "title": "Programa Descanso Visual – La regla 20/20/20 para proteger tu vista",
+    "description": "Conozca el programa Descanso Visual (Eye Rest) y la aplicación de la regla 20/20/20 para proteger su vista de la fatiga visual digital mientras trabaja en la computadora. Características, cómo usarlo y beneficios para la salud ocular.",
+    "keywords": "descanso visual, regla 20/20/20, Eye Rest, fatiga visual, protección de la vista, trabajo en computadora, salud ocular, programas útiles, programas de computadora, consejos para los ojos"
+},
+
+
+
+"Home_Topics":  "الترجمة الخاص بالمواضيع المعروضة في الصفحة الرئيسية",
+
+  "a1_title": "El tabaquismo y sus efectos nocivos para la salud y la sociedad",
+  "a1_desc": "En este artículo hablamos sobre los principales daños del tabaquismo y una explicación completa sobre el tabaco, sus perjuicios y cómo dejar de fumar.",
+  "a2_title": "Las mejores formas de ganar dinero online para principiantes (Guía completa 2026)",
+  "a2_desc": "Artículo que explica las mejores formas confiables de ganar dinero en línea en 2026, con ejemplos prácticos y consejos para principiantes. Incluye freelancing, blogs, marketing de afiliación y comercio electrónico.",
+  "a3_title": "Los grandes secretos de bajar la mirada y sus beneficios ocultos",
+  "a3_desc": "¿Alguna vez has sentido que tu mente está confusa sin una razón aparente? ¿Sabías que una sola mirada puede abrir la puerta a una ansiedad constante y distracción mental? ¡Descubre cómo bajar la mirada puede darte verdadera paz mental y protegerte de obsesiones interminables!",
+  "a4_title": "Descargar Programa Descanso Visual – Regla 20/20/20",
+  "a4_desc": "Protege tus ojos del estrés visual mientras trabajas en la computadora con un programa de alertas inteligentes cada 20 minutos para un mejor descanso.",
+  "a5_title": "Un método probado para dejar la masturbación en solo 7 días",
+  "a5_desc": "Artículo que describe pasos prácticos e integrados para dejar la masturbación en 7 días cambiando patrones de pensamiento, reduciendo desencadenantes, mejorando el estilo de vida y construyendo hábitos saludables que apoyen el autocontrol.",
+
+
+
+"Programs_Topics":  "الترجمة الخاص بالمواضيع المعروضة في صفحة البرامج",
+
+  "b1_title": "Programa Descanso Visual – Regla 20/20/20",
+  "b1_desc": "Protege tus ojos del estrés visual mientras trabajas en la computadora con alertas inteligentes cada 20 minutos para un mejor descanso.",
+  "b2_title": "Programas de seguridad: ¿Cuál es la diferencia entre Antivirus y Firewall?",
+  "b2_desc": "¿Conoces la diferencia entre los diferentes programas de seguridad? En este artículo explicamos la diferencia y cuál necesitas realmente para tu dispositivo.",
+
+
+
+"Articles_Topics":  "الترجمة الخاص بالمواضيع المعروضة في صفحة المقالات",
+
+  "c1_title": "El tabaquismo y sus efectos nocivos para la salud y la sociedad",
+  "c1_desc": "En este artículo hablamos sobre los principales daños del tabaquismo y una explicación completa sobre el tabaco, sus perjuicios y cómo dejar de fumar.",
+  "c2_title": "Las mejores formas de ganar dinero online para principiantes (Guía completa 2025)",
+  "c2_desc": "Artículo que explica las mejores formas confiables de ganar dinero en línea en 2025, con ejemplos prácticos y consejos para principiantes. Incluye freelancing, blogs, marketing de afiliación y comercio electrónico.",
+  "c3_title": "Los grandes secretos de bajar la mirada y sus beneficios ocultos",
+  "c3_desc": "¿Alguna vez has sentido que tu mente está confusa sin una razón aparente? ¿Sabías que una sola mirada puede abrir la puerta a una ansiedad constante y distracción mental? ¡Descubre cómo bajar la mirada puede darte verdadera paz mental y protegerte de obsesiones interminables!",
+  "c4_title": "Un método probado para dejar la masturbación en 7 días",
+  "c4_desc": "Artículo que describe pasos prácticos e integrados para dejar la masturbación en 7 días cambiando patrones de pensamiento, reduciendo desencadenantes, mejorando el estilo de vida y construyendo hábitos saludables que apoyen el autocontrol.",
+
+
+
+"About_Text":  "الترجمة الخاص بالنص المعروض في صفحة حول",
+
+  "about_title": "Sobre Nosotros",
+  "about_desc": "El sitio web Internet Galaxy es tu destino integral para artículos que enriquecen tu vida y amplían tus horizontes. Ofrecemos contenido destacado sobre diversos temas que tocan aspectos de la vida cotidiana, desde corregir creencias comunes hasta mejorar la salud mental y física, y te capacitamos con estrategias efectivas para vivir consciente y exitosamente. Nuestro objetivo es presentar el conocimiento de manera simplificada, amena y confiable, que te inspire para un cambio positivo y el desarrollo personal en cada etapa de tu vida.",
+  "contact_title": "Contáctanos",
+  "contact_desc": "¿Tienes una sugerencia o consulta? Nos encantaría saber de ti a través del siguiente correo electrónico:",
+
+
+
+
+"Wait_Page": "الترجمة الخاص بالنص المعروض في صفحة الانتظار",
+
+  "download_prepare_title": "📥 Preparando enlace de descarga...",
+  "download_btn_text": "Haz clic aquí para descargar",
+
+
+
+
+"article-1": "ترجمة مقالة العادة السرية.",
+
+  "title": "Método efectivo para dejarlo en 7 días",
+
+  "written_by_label": "✍️ Escrito por",
+  "date": "16 abril 2026",
+
+  "article4_intro_title": "Introducción",
+  "article4_intro_desc": "La masturbación se ha convertido en uno de los problemas más comunes y extendidos en la actualidad, y la razón es simple: la falta de conciencia plena de las personas en el uso correcto y seguro de la tecnología, lo que puede llevar a la exposición al contenido pornográfico y, por consiguiente, a la masturbación. Después de terminar de leer este artículo, podrá dejar la masturbación por completo y nunca volverá a ser un problema para usted. Empecemos.",
+  "article4_topics_title": "Temas Principales",
+  "article4_topic1": "Preparación Psicológica Fuerte (Tú Controlas)",
+  "article4_topic2": "Los Beneficios Asombrosos de Bajar la Mirada",
+  "article4_topic3": "Pensamiento Adecuado y Limpieza de la Mente de la Pornografía",
+  "article4_topic4": "La Soledad y Cómo Es la Causa Principal de la Pornografía",
+  "article4_topic5": "Practicar Ejercicios de Kegel",
+  "article4_topic6": "Seguir una Dieta Adecuada",
+  "article4_topic7": "No Mirar las Áreas Genitales",
+  "article4_topic8": "Practicar la Masturbación Sin Daño Si No Puede Parar",
+  "article4_topic9": "Beneficios de Dejar la Masturbación",
+  "article4_sec1_title": "1- Preparación Psicológica Fuerte (Tú Controlas)",
+  "article4_sec1_desc": "El primer punto y más importante es entender que eres tú quien controla, no una persona atrapada en el círculo de la pornografía y la masturbación que no puede salir. Debes cambiar completamente esta idea, porque la verdad es que puedes salir de este círculo en cualquier momento que elijas, simplemente.",
+  "article4_sec1b_desc": "La idea principal aquí es reprogramar tu pensamiento de que tienes el control de ti mismo y de que no eres esclavo de este hábito. Cuando realmente crees en ello, esto construye confianza en ti mismo y te hace más fuerte psicológicamente y más capaz de parar en cualquier momento sin sentirte impotente.",
+  "article4_sec2_title": "2- Los Beneficios Asombrosos de Bajar la Mirada",
+  "article4_sec2_desc": "Antes de entender por qué bajar la mirada es una de las formas más poderosas para alejarte de la pornografía y la masturbación, debemos entender que el cerebro se ve muy afectado por lo que vemos.",
+  "article4_sec2a_desc": "El ser humano depende en gran medida de la estimulación visual, lo que significa que cualquier cosa que ves afecta tus emociones y comportamiento. Por ejemplo: un paisaje natural te hace sentir tranquilo y relajado, mientras que una escena de pelea te pone tenso y molesto. De la misma manera, cuando una persona mira al sexo opuesto de manera excitante, crea una estimulación en el cerebro que puede convertirse en deseo sexual. Aquí es donde entra bajar la mirada, ya que previene esta estimulación desde el principio.",
+  "article4_sec2b_desc": "Y con la costumbre de bajar la mirada en todas partes (calle, teléfono, televisión), el cerebro comienza a reducir su respuesta a estos estímulos, y el deseo se vuelve más tranquilo y natural. Esto finalmente ayuda a reducir la pornografía y la masturbación de manera gradual y efectiva 👍.",
+  "article4_sec3_title": "3- Pensamiento Adecuado y Limpieza de la Mente de la Pornografía",
+  "article4_sec3_desc": "Tu forma de pensar determina toda tu vida. Una persona exitosa y una fracasada pueden tener las mismas capacidades, pero la verdadera diferencia está en la forma de pensar. Cuando cambias tu forma de pensar para mejor, tu vida cambia para mejor. El optimismo y la buena opinión de Dios juegan un papel muy importante en esto. El Profeta ﷺ dijo: 'Tengan optimismo en el bien, lo encontrarán', lo que confirma la importancia del pensamiento positivo. También, en el hadiz sagrado, Dios Todopoderoso dijo: 'Estoy como Mi siervo piensa de Mí', lo que significa que tu pensamiento positivo sobre Dios tiene un gran impacto en tu vida y resultados.",
+  "article4_sec3a_desc": "Para detener la pornografía y la masturbación, primero debes creer que eres capaz de controlarte a ti mismo y que no eres esclavo de este hábito. Repetir la idea de que puedes cambiar fortalece tu voluntad y confianza en ti mismo. Y con la prevención de pensamientos, contenido y fantasías sexuales + bajar la mirada, los estímulos disminuyen gradualmente, el deseo se debilita, y esto te ayuda a construir un control más fuerte sobre ti mismo y tu vida en general.",
+  "article4_sec4_title": "4- La Soledad y Cómo Es la Causa Principal de la Pornografía",
+  "article4_sec4_desc": "Una de las cosas más importantes que debes entender es que la mente es más débil frente a los pensamientos pornográficos cuando estás solo y aislado, porque la soledad da más espacio para pensar y fantasear. Por eso es muy importante romper el ciclo de aislamiento y estar siempre cerca de la gente o en un lugar con movimiento y sonido, incluso si no hablas directamente con ellos. Lo importante es que no estés solo todo el tiempo.",
+  "article4_sec4a_desc": "Además, una de las formas más poderosas es mantenerte siempre ocupado, porque la mente no puede concentrarse en dos cosas al mismo tiempo. Si te vienen pensamientos negativos o pensamientos pornográficos, levántate inmediatamente y cambia tu situación: estudia, muévete, siéntate con tu familia o haz cualquier actividad simple. Después de unos minutos, encontrarás que los pensamientos comienzan a desaparecer porque ocupaste tu mente con otra cosa.",
+  "article4_sec4b_desc": "Como se dice: 'Si no te ocupas con la verdad, la falsedad te ocupará.' Esto significa que la ociosidad es una razón principal para el regreso de estos pensamientos, mientras que estar ocupado los rompe rápidamente y devuelve tu concentración a tu estado natural.",
+  "article4_sec5_title": "5- Practicar Ejercicios de Kegel",
+  "article4_sec5_desc": "Aquí hablamos del impacto orgánico de la pornografía y la masturbación, y cómo los ejercicios de Kegel pueden ayudar a reducir el impacto de los estímulos sexuales. Los ejercicios de Kegel se dirigen a los músculos del suelo pélvico y ayudan a mejorar el control sobre esta área y fortalecer el control físico en general.",
+  "kegel_note_title": "Nota Importante:",
+  "kegel_note_desc": "Puedes buscar cómo practicar los ejercicios de Kegel correctamente en YouTube o Internet, y encontrarás explicaciones detalladas que te ayudarán a aplicarlos correctamente y beneficiarte de ellos de la mejor manera.",
+  "article4_sec5a_desc": "En términos simples, con la masturbación excesiva puede ocurrir un aumento desequilibrado del flujo sanguíneo a las áreas genitales, mientras que practicar regularmente estos ejercicios ayuda a mejorar la circulación sanguínea y fortalecer los músculos, mejorando así el control y reduciendo la excitación excesiva. Por lo tanto, se recomienda practicar ejercicios de Kegel a diario (dos veces al día, por ejemplo, al principio), y después de un tiempo puedes reducirlos gradualmente según tu capacidad. Son de los hábitos físicos que pueden apoyar significativamente el proceso de recuperación con el tiempo.",
+  "article4_sec6_title": "6- Seguir una Dieta Adecuada",
+  "article4_sec6_desc": "La dieta tiene un impacto muy significativo en el estado físico y mental, y por lo tanto en el equilibrio hormonal y el apetito sexual. Por eso es importante cuidar tu comida y hacerla lo más saludable posible, como comer verduras a diario, beber suficiente agua y consumir fuentes beneficiosas como huevos y carne. Al mismo tiempo, debes reducir los alimentos procesados y no saludables como papas fritas, galletas saladas y refrescos, porque pueden causar letargo, cambios de humor y afectar el equilibrio del cuerpo y las hormonas.",
+  "article4_sec6a_desc": "Entre los consejos que podrían ayudar a reducir el deseo indirectamente: comer ajo con moderación, ya que se dice que ayuda a reducir el exceso de flujo sanguíneo a las áreas genitales, y también prestar atención a los alimentos beneficiosos para la digestión como manzanas, sidra de manzana y aceite de oliva. En cuanto al pan, es preferible consumirlo con moderación, de 2 a 3 panes al día según las necesidades del cuerpo, porque el exceso puede causar problemas digestivos, pero al mismo tiempo no es preferible eliminarlo por completo. La idea básica es que una dieta equilibrada ayuda a estabilizar el cuerpo y las hormonas, reduciendo así los efectos negativos en la salud mental y sexual.",
+  "article4_sec7_title": "7- No Mirar las Áreas Genitales",
+  "article4_sec7_desc": "Uno de los métodos que ayuda a reducir la masturbación es evitar mirar los genitales, especialmente durante el período de abandono de la masturbación. La idea es que el cerebro asocia mirar estas áreas con un aumento de la estimulación y el deseo. Con el tiempo, si te impides mirarlas en situaciones cotidianas como el baño o durante la limpieza, comienzas a romper esta asociación gradualmente, y por lo tanto la excitación asociada con esta visión se reduce significativamente. También es importante que después de terminar tus necesidades en el baño, te laves y salgas rápidamente sin concentrarte o pensar en estas áreas, para no dar oportunidad a que se forme ninguna asociación mental.",
+  "article4_sec7a_desc": "Por otro lado, debemos entender que el problema más grande a menudo proviene de la pornografía en sí misma, no solo de la masturbación, porque ver contenido pornográfico es lo que causa adicción, distrae el pensamiento y causa cambios de humor y falta de concentración. En el caso de detener la pornografía y reducir los estímulos, el control se vuelve más fácil y los síntomas son mucho menores.",
+  "article4_sec8_title": "8- Practicar la Masturbación Correctamente",
+  "article4_sec8_desc": "La forma correcta de practicar la masturbación es cuando sientes un deseo alto o aumentado, entonces la practicas pero sin ver videos pornográficos ni depender de fantasías y pensamientos sexuales. La idea aquí es practicar la masturbación solo cuando el deseo alcanza un nivel alto, con el propósito de liberarlo o reducirlo. Con el tiempo, notarás que tu mente se acostumbra a este método, de modo que no se ve afectada por ninguna escena inapropiada como solía suceder.",
+  "article4_sec8a_desc": "Los estudios han demostrado que separar la mente de la dependencia de escenas o fantasías durante la masturbación ayuda a reducir su impacto negativo y hace que la práctica esté vinculada solo a la necesidad física cuando el deseo es alto, ya sea debido a un largo período de abstinencia o por cualquier otra razón. Este consejo se considera uno de los métodos más poderosos: intenta practicar la masturbación sin pornografía ni fantasías sexuales si no puedes detenerla por completo. Pero si puedes detenerte, por supuesto es mejor no practicarla en absoluto.",
+  "article4_sec9_title": "9- Beneficios de Dejar la Masturbación",
+  "article4_sec9_desc": "Dejar la masturbación te trae grandes beneficios a nivel psicológico y físico, y te ayuda a recuperar tu equilibrio y concentración y a vivir de manera más cómoda y estable. Con el tiempo, notarás una mejora en el estado de ánimo, un aumento de la confianza en ti mismo, una mayor actividad y vitalidad, y una mejor capacidad para concentrarte y alcanzar tus metas.",
+  "article4_benefit1": "1- Una vida más natural y tranquilidad psicológica sin preocupación constante por la pornografía.",
+  "article4_benefit2": "2- Mejora del estado de ánimo, aumento de la confianza en uno mismo y la autosatisfacción.",
+  "article4_benefit3": "3- Aumento de la actividad y vitalidad como resultado del equilibrio y la estabilidad del cuerpo.",
+  "article4_benefit4": "4- Mayor capacidad para concentrarse, alcanzar metas y tener éxito en la vida.",
+  "article4_benefit5": "5- Una sensación de tranquilidad psicológica y cercanía a Dios al abandonar los hábitos dañinos.",
+  "article4_benefit6": "6- Construir una vida mejor y lograr las ambiciones de manera gradual y clara.",
+  "article4_summary_title": "Resumen Completo del Viaje y la Recuperación de la Masturbación",
+  "article4_summary_desc": "Al final, la recuperación de la masturbación depende principalmente de cambiar por completo tu estilo de vida, no solo de una decisión momentánea. El verdadero comienzo es cambiar la forma de pensar y creer que puedes controlarte a ti mismo y salir de este círculo. Con el tiempo, reducir los estímulos como el contenido pornográfico y evitar el aislamiento y la ociosidad ayuda enormemente a reducir el deseo y recuperar el autocontrol. Porque cuanto menos influencias externas, más se calma la mente y vuelve a su equilibrio natural.",
+  "article4_summarya_desc": "También prestar atención a una dieta saludable, organizar tu día, estar ocupado con metas y practicar hábitos de apoyo como los ejercicios de Kegel, todos estos factores fortalecen la voluntad y ayudan al cuerpo y la mente a estabilizarse. Con la continuación de estos pasos, una persona comienza a notar una mejora gradual en el estado de ánimo, la energía y la confianza en sí mismo, y con el tiempo puede vivir una vida más equilibrada, lejos del hábito, con mayor enfoque en sus metas y su vida real.",
+  "article4_end_note": "Si te benefició este artículo, síguenos en Internet Galaxy para encontrar más consejos y artículos sobre cómo superar la pornografía y los hábitos negativos, además de temas sobre el desarrollo personal y la mejora del estilo de vida.",
+  "article4_enda_note": "Nos vemos en un nuevo tema pronto, y te deseamos un viaje exitoso hacia el cambio positivo. Paz 👋",
+  "article4_download_title": "📥 Descargar el artículo en formato PDF",
+  "article4_download_btn": "Haz clic aquí para descargar...",
+
+  
+
+
+"Eye_Rest_Program": "ترجمة برنامج راحة العين",
+
+  "eyerest_title": "👁️ Programa de Descanso Visual – Regla 20/20/20",
+  "article_author": "✍️ Por",
+  "eyerest_date": "24 de Julio de 2025",
+  "eyerest_intro_title": "Introducción",
+  "eyerest_intro_desc": "Si trabajas frente a una pantalla de computadora durante largos períodos, tus ojos sufren fatiga visual. El programa <strong>Eye Rest</strong> fue diseñado para ayudarte a proteger tus ojos siguiendo la regla <strong>20/20/20</strong> recomendada por los oftalmólogos: cada 20 minutos, mira algo a 20 pies (6 metros) de distancia durante 20 segundos.",
+  "eyerest_features_title": "Principales características",
+  "eyerest_feature1": "⏱️ Temporizador personalizable (de 1 a 120 minutos).",
+  "eyerest_feature2": "🌍 Soporte para tres idiomas: árabe, inglés, español.",
+  "eyerest_feature3": "🔊 Posibilidad de cambiar el sonido de alerta.",
+  "eyerest_feature4": "📊 Estadísticas del número de pausas diarias.",
+  "eyerest_feature5": "🖥️ Funciona en segundo plano con un icono en la barra de tareas.",
+  "eyerest_feature6": "🚀 Opción de inicio automático al encender Windows.",
+  "eyerest_usage_title": "Instrucciones de uso",
+  "eyerest_usage1": "Abre el programa y establece el intervalo entre alertas.",
+  "eyerest_usage2": "Pulsa el botón <strong>Iniciar temporizador</strong>.",
+  "eyerest_usage3": "Cuando termine el tiempo, el programa apagará temporalmente la pantalla para recordarte que tomes un descanso.",
+  "eyerest_usage4": "Después de 20 segundos, la pantalla se encenderá automáticamente.",
+  "eyerest_summary_title": "En resumen:",
+  "eyerest_summary_desc1": "Al aplicar la regla <strong>20/20/20</strong> y usar regularmente el programa <strong>Eye Rest</strong>, le darás a tus ojos el descanso que necesitan y preservarás su salud contra la fatiga visual y el daño a largo plazo.",
+  "eyerest_summary_desc2": "Cuidar tus ojos hoy es una inversión para tu visión del futuro.",
+  "eyerest_footer_text": "Para más información sobre el programa, visita el",
+  "official_website": "sitio web oficial",
+  "download_title": "📥 Descarga",
+  "download_btn": "Haz clic aquí para descargar...",
+
+
+
+
+
+"Quit-smooking": "ترجمة مقالة الاقلاع عن التدخين",
+   
+  "article1_title": "El tabaquismo y sus efectos nocivos para la salud y la sociedad",
+  "article_date": "24 de Julio de 2025",
+  "article1_intro_title": "Introducción",
+  "article1_intro_desc": "El tabaquismo se considera uno de los hábitos de salud negativos más peligrosos extendidos por todo el mundo. Causa muchas enfermedades que afectan la vida del individuo y la sociedad, y a pesar de las continuas campañas de concienciación, el número de fumadores va en aumento.",
+  "article1_damages_title": "Principales daños del tabaquismo",
+  "article1_damage1": "Mayor riesgo de enfermedades cardíacas y accidentes cerebrovasculares.",
+  "article1_damage2": "Debilitamiento del sistema respiratorio y aumento de las posibilidades de cáncer de pulmón.",
+  "article1_damage3": "Deterioro de la salud bucal y dental y aparición de mal aliento.",
+  "article1_damage4": "Impacto negativo en la piel y la apariencia general debido a la pérdida de oxígeno.",
+  "article1_passive_title": "Tabaquismo pasivo",
+  "article1_passive_desc": "El daño del tabaquismo no se limita solo al fumador, sino que se extiende a quienes lo rodean, especialmente a niños y mujeres embarazadas. Esto se conoce como tabaquismo pasivo, una causa importante de enfermedades respiratorias en los niños.",
+  "article1_quit_title": "¿Cómo dejar de fumar?",
+  "article1_quit1": "Decide sinceramente que quieres dejar de fumar.",
+  "article1_quit2": "Busca el apoyo de familiares o amigos.",
+  "article1_quit3": "Usa sustitutos de nicotina si es necesario.",
+  "article1_quit4": "Reemplaza el mal hábito con hábitos saludables como el ejercicio.",
+  "article1_footer_note": "📌 Para más información, visite el sitio web de la <a href=\"https://www.who.int/es/news-room/fact-sheets/detail/tobacco\" target=\"_blank\">Organización Mundial de la Salud - Tabaco</a>",
+
+
+
+
+
+"Make-money-online": "ترجمة مقالة كسب المال عبر الإنترنت",
+  
+  "article2_title": "Las mejores formas de ganar dinero online para principiantes (Guía completa 2025)",
+  "article2_intro": "Ganar dinero en línea ya no es solo un sueño, sino que se ha convertido en una realidad tangible que viven millones de personas en todo el mundo. En esta guía, conoceremos los mejores métodos confiables que cualquier principiante puede utilizar para comenzar su viaje hacia la obtención de ingresos en línea.",
+  "article2_sec1_title": "1. Freelancing",
+  "article2_freelance_platform_1": "Fiverr",
+  "article2_freelance_platform_2": "Upwork",
+  "article2_freelance_platform_3": "Freelancer",
+  "article2_freelance_platform_4": "PeoplePerHour",
+  "article2_affiliate_platform_1": "Amazon Affiliate",
+  "article2_affiliate_platform_2": "ClickBank",
+  "article2_affiliate_platform_3": "AliExpress Affiliate",
+  "article2_store_platform_1": "Shopify",
+  "article2_store_platform_2": "WooCommerce",
+  "article2_store_platform_3": "Etsy",
+  "article2_sec1_desc": "El freelancing es la forma más directa de empezar a ganar dinero en línea e incluye ofrecer servicios como diseño, programación, redacción y otros a través de plataformas digitales.",
+  "article2_sec2_title": "2. Creación de contenido y blogging",
+  "article2_sec2_desc": "Si tienes la habilidad de expresión, explicación o filmación, puedes empezar a crear contenido visual o escrito a través de un blog o canal de YouTube y generar ingresos mediante anuncios, patrocinios o venta de productos.",
+  "article2_sec3_title": "3. Marketing de afiliación",
+  "article2_sec3_desc": "A través del marketing de afiliación, promocionas productos a cambio de recibir un porcentaje de cada venta realizada a través de ti. Se considera una de las formas más fáciles y rápidas de obtener ingresos pasivos.",
+  "article2_sec4_title": "4. Comercio electrónico (E-commerce)",
+  "article2_sec4_desc": "Si tienes productos digitales o físicos, puedes crear una tienda en línea y venderlos directamente. Existen plataformas fáciles para comenzar tu propia tienda como Shopify y WooCommerce.",
+  "article2_tips_title": "💡 Consejos para tener éxito al ganar dinero en línea",
+  "article2_tip1": "Comienza en un campo que te guste y que puedas desarrollar continuamente.",
+  "article2_tip2": "Aprende de fuentes confiables y mantente alejado de los sitios que te prometen ganancias rápidas.",
+  "article2_tip3": "Establece un plan de trabajo claro y dedica tiempo diariamente al trabajo y al desarrollo.",
+  "article2_tip4": "Ten paciencia, porque los resultados no llegan de la noche a la mañana.",
+  "article2_summary_title": "📌 Resumen",
+  "article2_summary_desc": "Las oportunidades disponibles hoy en línea son ilimitadas, y todo lo que necesitas es voluntad, algunas habilidades y paciencia. Comienza hoy en un campo que se adapte a ti, y te sorprenderán los resultados en unos pocos meses.",
+
+
+
+
+
+"Lowering the Gaze": "ترجمة مقالة غض البصر",
+  
+  "article3_title": "Los grandes secretos de bajar la mirada y sus beneficios ocultos",
+  "article3_date": "24 de julio de 2025",
+  "article3_intro_title": "Introducción",
+  "article3_intro_desc": "Bajar la mirada no es solo una directriz religiosa, sino una gran puerta a la tranquilidad mental y psicológica. El Islam lo ordenó y el Profeta ﷺ lo recomendó por una gran sabiduría que va más allá del momento fugaz de la mirada. En este artículo te revelamos los grandes y ocultos secretos que muchos desconocen sobre bajar la mirada y su verdadero impacto en la vida de la persona.",
+  "article3_sec1_title": "¿Qué sucede cuando no bajas la mirada?",
+  "article3_sec1_desc": "Al mirar imágenes o escenas inapropiadas, estas imágenes se almacenan en el subconsciente. Satanás las usa más tarde para recordárselas a la persona en sus momentos de debilidad, causando re-imaginación y pensamiento constante, y puede llevar a la deriva en deseos, obsesiones y apego mental y emocional a estas imágenes.",
+  "article3_sec2_title": "Los grandes beneficios de bajar la mirada",
+  "article3_sec2_li1": "Cerrar la puerta por la que entra Satanás.",
+  "article3_sec2_li2": "Tranquilidad mental y psicológica como resultado de reducir el pensamiento excesivo sobre lo prohibido.",
+  "article3_sec2_li3": "Proteger las células cerebrales del agotamiento mental y la distracción.",
+  "article3_sec2_li4": "Aumentar la concentración en el estudio y el trabajo y fortalecer la memoria y la comprensión.",
+  "article3_sec2_li5": "Claridad interior y estabilidad emocional alejada de las fluctuaciones psicológicas resultantes de las imágenes estimulantes.",
+  "article3_sec3_title": "Bajar la mirada también es para las mujeres",
+  "article3_sec3_desc": "Así como se les pide a los hombres que bajen la mirada, también se les pide a las mujeres que no se apeguen a la apariencia externa de los jóvenes ni piensen excesivamente en ellos, porque el mismo mecanismo de repetición y susurro satánico se aplica a ambas partes. Bajar la mirada protege tanto el corazón como la mente, tanto para hombres como para mujeres.",
+  "article3_sec4_title": "¿Por qué el Profeta nos ordenó bajar la mirada?",
+  "article3_sec4_desc": "Allah Todopoderoso dijo: <strong>\"Tomen lo que el Mensajero les da y absténganse de lo que les prohíbe\"</strong> [Al-Hashr: 7]. El Profeta ﷺ no explicó todo en detalle porque en seguir sus órdenes está todo el bien, y bajar la mirada es una de esas órdenes que encierran grandes beneficios que solo realizamos a través de la experiencia.",
+  "article3_footer_note": "📌 Para más beneficios sobre bajar la mirada, puedes leer el artículo <a href=\"https://islamqa.info/es/answers/20229\" target=\"_blank\">La norma sobre bajar la mirada y sus beneficios</a> del sitio web Islam Q&A.",
+  "article3_footer_dua": "🎁 Una oración para ti: <strong>\"Que nuestro Señor te conceda alegría y compensación por cada tristeza y dolor en tu vida que asombre a todas las criaturas, porque Él es el Más Generoso, el Grande\"</strong>, di Amén 🙏"
+}

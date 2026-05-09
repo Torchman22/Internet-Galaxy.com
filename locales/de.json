@@ -1,0 +1,282 @@
+{
+  "home": "Startseite",
+  "programs": "Programme",
+  "articles": "Artikel",
+  "about": "Über uns",
+  "contact": "Kontakt",
+  "search_placeholder": "Suchen...",
+
+  "website_address": "Willkommen in der Internetgalaxie",
+
+  "topics": "Themen :",
+
+  "_programs": "Programme :",
+
+  "_articles": "Artikel :",
+
+  "_about": "Über :",
+
+
+
+"Articles-SEO": "الترجمة التالية خاصة بمحركات البحث في قسم head",
+  "article1": {
+    "title": "Eine bewährte Methode, um mit der Masturbation in nur 7 Tagen aufzuhören",
+    "description": "Ein praktischer und bewährter Leitfaden, um mit der Masturbation innerhalb von 7 Tagen aufzuhören, indem man Denkmuster ändert, Auslöser reduziert und den Lebensstil verbessert.",
+    "keywords": "Masturbation, mit Masturbation aufhören, Schäden der Masturbation, Auswirkungen der Masturbation, Pornosucht überwinden, Bedeutung der Masturbation, körperliche Auswirkungen der Masturbation, gesundheitliche Auswirkungen der Masturbation, wie man mit Masturbation aufhört, Masturbation bei Mädchen, wie man Masturbation kontrolliert"
+},
+
+"article2": {
+    "title": "Gesundheitliche und gesellschaftliche Schäden des Rauchens | Aufklärungsartikel",
+    "description": "Erfahren Sie mehr über die gesundheitlichen, sozialen und psychologischen Schäden des Rauchens und wie Sie sie verhindern können, in einem umfassenden und vereinfachten Artikel.",
+    "keywords": "Rauchen, Schäden des Rauchens, Gesundheit, Gesellschaft, Raucherentwöhnung, Aufklärungsartikel, öffentliche Gesundheit"
+},
+
+"article3": {
+    "title": "Die besten Wege, um als Anfänger online Geld zu verdienen (Umfassender Leitfaden 2026)",
+    "description": "Entdecken Sie die besten Wege, um als Anfänger im Jahr 2025 online Geld zu verdienen, einschließlich Freelancing, Blogging, Affiliate-Marketing, E-Commerce und Erfolgstipps.",
+    "keywords": "online Geld verdienen, Freelancing, Geld verdienen für Anfänger, Affiliate-Marketing, Content-Erstellung, E-Commerce, Geld verdienen mit Blogs, Geldverdien-Leitfaden 2025, einfache Geldverdien-Methoden, Remote-Arbeit, passives Einkommen"
+},
+
+"article4": {
+    "title": "Die verborgenen Geheimnisse des gesenkten Blicks und seine psychologischen & mentalen Vorteile",
+    "description": "Entdecken Sie die großen Geheimnisse des gesenkten Blicks und seine psychologischen und mentalen Vorteile sowie seine wahre Auswirkung auf das menschliche Leben, wie es der Islam geboten hat.",
+    "keywords": "Blick senken, Vorteile des Blicksenkens, Islam, psychische Gesundheit, Unterbewusstsein, Begierden, Gelassenheit, Gedankentherapie, geistige Klarheit, Widerstand gegen Zwangsgedanken"
+},
+
+"article5": {
+    "title": "Augenruhe-Programm – Die 20/20/20-Regel zum Schutz Ihrer Sehkraft",
+    "description": "Erfahren Sie mehr über das Augenruhe-Programm (Eye Rest) und die Anwendung der 20/20/20-Regel zum Schutz Ihrer Sehkraft vor digitaler Augenbelastung bei der Arbeit am Computer. Funktionen, Anwendung und Vorteile für die Augengesundheit.",
+    "keywords": "Augenruhe, 20/20/20-Regel, Eye Rest, Augenbelastung, Sehkraftschutz, Computerarbeit, Augengesundheit, nützliche Software, Computerprogramme, Augentipps"
+},
+
+
+"Home_Topics":  "الترجمة الخاص بالمواضيع المعروضة في الصفحة الرئيسية",
+
+  "a1_title": "Rauchen und seine schädlichen Auswirkungen auf Gesundheit und Gesellschaft",
+  "a1_desc": "In diesem Artikel besprechen wir die wichtigsten Schäden des Rauchens und geben eine vollständige Erklärung zum Rauchen, seinen Gefahren und wie man damit aufhört.",
+  "a2_title": "Beste Wege, um online Geld zu verdienen für Anfänger (Umfassender Leitfaden 2026)",
+  "a2_desc": "Ein Artikel, der die besten zuverlässigen Methoden erklärt, um 2026 online Geld zu verdienen, mit praktischen Beispielen und Tipps für Anfänger. Beinhaltet Freiberuflichkeit, Blogging, Affiliate-Marketing und E-Commerce.",
+  "a3_title": "Die großen Geheimnisse des Gesenkten Blicks und seine verborgenen Vorteile",
+  "a3_desc": "Haben Sie schon einmal das Gefühl gehabt, dass Ihr Geist ohne erkennbaren Grund durcheinander ist? Wussten Sie, dass ein einziger Blick die Tür zu ständiger Angst und geistiger Ablenkung öffnen kann? Entdecken Sie, wie das Senken Ihres Blicks Ihnen echten Seelenfrieden geben und Sie vor endlosen Zwangsgedanken schützen kann!",
+  "a4_title": "Laden Sie das Eye Rest Programm herunter – 20/20/20 Regel",
+  "a4_desc": "Schützen Sie Ihre Augen vor visuellem Stress bei der Arbeit am Computer mit einem intelligenten Erinnerungsprogramm alle 20 Minuten für bessere Erholung.",
+  "a5_title": "Eine bewährte Methode, um mit der Masturbation in nur 7 Tagen aufzuhören",
+  "a5_desc": "Ein Artikel, der praktische, integrierte Schritte beschreibt, um die Masturbation innerhalb von 7 Tagen zu beenden, durch Veränderung der Denkmuster, Reduzierung von Auslösern, Verbesserung des Lebensstils und Aufbau gesunder Gewohnheiten, die die Selbstkontrolle unterstützen.",
+
+
+
+"Programs_Topics":  "الترجمة الخاص بالمواضيع المعروضة في صفحة البرامج",
+
+  "b1_title": "Eye Rest Programm – 20/20/20 Regel",
+  "b1_desc": "Schützen Sie Ihre Augen vor visuellem Stress bei der Arbeit am Computer mit intelligenten Warnungen alle 20 Minuten für bessere Erholung.",
+  "b2_title": "Sicherheitsprogramme: Was ist der Unterschied zwischen Antivirus und Firewall?",
+  "b2_desc": "Kennen Sie den Unterschied zwischen verschiedenen Sicherheitsprogrammen? In diesem Artikel erklären wir den Unterschied und welche Sie wirklich für Ihr Gerät benötigen.",
+
+
+
+"Articles_Topics":  "الترجمة الخاص بالمواضيع المعروضة في صفحة المقالات",
+
+  "c1_title": "Rauchen und seine schädlichen Auswirkungen auf Gesundheit und Gesellschaft",
+  "c1_desc": "In diesem Artikel besprechen wir die wichtigsten Schäden des Rauchens und geben eine vollständige Erklärung zum Rauchen, seinen Gefahren und wie man damit aufhört.",
+  "c2_title": "Beste Wege, um online Geld zu verdienen für Anfänger (Umfassender Leitfaden 2025)",
+  "c2_desc": "Ein Artikel, der die besten zuverlässigen Methoden erklärt, um 2025 online Geld zu verdienen, mit praktischen Beispielen und Tipps für Anfänger. Beinhaltet Freiberuflichkeit, Blogging, Affiliate-Marketing und E-Commerce.",
+  "c3_title": "Die großen Geheimnisse des gesenkten Blicks und seine verborgenen Vorteile",
+  "c3_desc": "Haben Sie schon einmal das Gefühl gehabt, dass Ihr Geist ohne erkennbaren Grund durcheinander ist? Wussten Sie, dass ein einziger Blick die Tür zu ständiger Angst und geistiger Ablenkung öffnen kann? Entdecken Sie, wie das Senken Ihres Blicks Ihnen echten Seelenfrieden geben und Sie vor endlosen Zwangsgedanken schützen kann!",
+  "c4_title": "Eine bewährte Methode, um mit der Masturbation in 7 Tagen aufzuhören",
+  "c4_desc": "Ein Artikel, der praktische, integrierte Schritte beschreibt, um die Masturbation innerhalb von 7 Tagen zu beenden, durch Veränderung der Denkmuster, Reduzierung von Auslösern, Verbesserung des Lebensstils und Aufbau gesunder Gewohnheiten, die die Selbstkontrolle unterstützen.",
+
+
+
+"About_Text":  "الترجمة الخاص بالنص المعروض في صفحة حول",
+
+  "about_title": "Über uns",
+  "about_desc": "Die Website Internet Galaxy ist Ihr umfassendes Ziel für Artikel, die Ihr Leben bereichern und Ihren Horizont erweitern. Wir bieten hochwertige Inhalte zu verschiedenen Themen, die Aspekte des täglichen Lebens berühren, von der Korrektur verbreiteter Überzeugungen bis zur Verbesserung der psychischen und physischen Gesundheit, und statten Sie mit effektiven Strategien für ein bewusstes und erfolgreiches Leben aus. Unser Ziel ist es, Wissen auf einfache, unterhaltsame und vertrauenswürdige Weise zu vermitteln, die Sie zu positiven Veränderungen und Selbstentwicklung in jeder Lebensphase inspiriert.",
+  "contact_title": "Kontakt",
+  "contact_desc": "Haben Sie einen Vorschlag oder eine Anfrage? Wir freuen uns über Ihre Kontaktaufnahme über die folgende E-Mail:",
+
+
+
+
+"Wait_Page": "الترجمة الخاص بالنص المعروض في صفحة الانتظار",
+
+  "download_prepare_title": "📥 Download-Link wird vorbereitet...",
+  "download_btn_text": "Klicken Sie hier zum Herunterladen",
+
+
+
+
+"article-1": "ترجمة مقالة العادة السرية.",
+
+  "title": "Effektive Methode in 7 Tagen aufzuhören",
+
+  "written_by_label": "✍️ Von",
+  "date": "16 April 2026",
+
+  "article4_intro_title": "Einleitung",
+  "article4_intro_desc": "Masturbation ist heutzutage zu einem der häufigsten und verbreitetsten Probleme geworden, und der Grund ist einfach: das mangelnde volle Bewusstsein der Menschen für die korrekte und sichere Nutzung der Technologie, was zur Exposition gegenüber pornografischen Inhalten und folglich zur Masturbation führen kann. Nachdem Sie diesen Artikel zu Ende gelesen haben, werden Sie in der Lage sein, mit der Masturbation vollständig aufzuhören, und sie wird nie wieder ein Problem für Sie darstellen. Los geht's.",
+  "article4_topics_title": "Hauptthemen",
+  "article4_topic1": "Starke Psychologische Vorbereitung (Sie Kontrollieren)",
+  "article4_topic2": "Die Unglaublichen Vorteile des Gesenkten Blicks",
+  "article4_topic3": "Richtiges Denken und Reinigung des Geistes von Pornografie",
+  "article4_topic4": "Einsamkeit und Wie Sie Die Hauptursache für Pornografie Ist",
+  "article4_topic5": "Durchführung von Kegel-Übungen",
+  "article4_topic6": "Befolgung einer Geeigneten Ernährung",
+  "article4_topic7": "Nicht auf Genitalbereiche Schauen",
+  "article4_topic8": "Ausübung von Masturbation Ohne Schaden, wenn Nicht Aufhören Können",
+  "article4_topic9": "Vorteile des Beendens der Masturbation",
+  "article4_sec1_title": "1- Starke Psychologische Vorbereitung (Sie Kontrollieren)",
+  "article4_sec1_desc": "Der erste und wichtigste Punkt ist zu verstehen, dass Sie derjenige sind, der kontrolliert, nicht eine Person, die im Kreis der Pornografie und Masturbation gefangen ist und nicht entkommen kann. Sie müssen diese Idee vollständig ändern, denn die Wahrheit ist, dass Sie diesen Kreis jederzeit einfach verlassen können.",
+  "article4_sec1b_desc": "Die Kernidee hier ist, Ihr Denken umzuprogrammieren, dass Sie selbstkontrolle haben und dass Sie kein Sklave dieser Gewohnheit sind. Wenn Sie wirklich daran glauben, baut das Selbstvertrauen in Ihnen auf und macht Sie psychisch stärker und fähiger, jederzeit aufzuhören, ohne sich hilflos zu fühlen.",
+  "article4_sec2_title": "2- Die Unglaublichen Vorteile des Gesenkten Blicks",
+  "article4_sec2_desc": "Bevor wir verstehen, warum der gesenkte Blick eine der stärksten Methoden ist, um sich von Pornografie und Masturbation fernzuhalten, müssen wir verstehen, dass das Gehirn stark von dem beeinflusst wird, was wir sehen.",
+  "article4_sec2a_desc": "Der Mensch ist stark auf visuelle Stimulation angewiesen, das heißt, alles, was Sie sehen, beeinflusst Ihre Gefühle und Ihr Verhalten. Zum Beispiel: Eine Naturlandschaft macht Sie ruhig und entspannt, während eine Kampfszene Sie angespannt und verärgert macht. Ähnlich verhält es sich, wenn eine Person das andere Geschlecht auf eine erregende Weise ansieht, erzeugt das eine Stimulation im Gehirn, die sich in sexuelles Verlangen verwandeln kann. Hier kommt der gesenkte Blick ins Spiel, denn er verhindert diese Stimulation von vornherein.",
+  "article4_sec2b_desc": "Und mit der Gewöhnung an den gesenkten Blick überall (Straße, Telefon, Fernsehen) beginnt das Gehirn, seine Reaktion auf diese Reize zu verringern, und das Verlangen wird ruhiger und natürlicher. Dies hilft letztendlich, Pornografie und Masturbation allmählich und effektiv zu reduzieren 👍.",
+  "article4_sec3_title": "3- Richtiges Denken und Reinigung des Geistes von Pornografie",
+  "article4_sec3_desc": "Ihre Denkweise bestimmt Ihr gesamtes Leben. Ein erfolgreicher und ein erfolgloser Mensch können die gleichen Fähigkeiten haben, aber der wahre Unterschied liegt in der Denkweise. Wenn Sie Ihre Denkweise zum Besseren ändern, ändert sich Ihr Leben zum Besseren. Optimismus und eine gute Meinung von Gott spielen dabei eine große Rolle. Der Prophet ﷺ sagte: 'Seid optimistisch in Bezug auf das Gute, ihr werdet es finden', was die Bedeutung des positiven Denkens bestätigt. Auch im heiligen Hadith sagte Allah der Allmächtige: 'Ich bin so, wie Mein Diener von Mir denkt', was bedeutet, dass Ihr positives Denken über Gott einen großen Einfluss auf Ihr Leben und Ihre Ergebnisse hat.",
+  "article4_sec3a_desc": "Um mit Pornografie und Masturbation aufzuhören, müssen Sie zuerst glauben, dass Sie sich selbst kontrollieren können und dass Sie kein Sklave dieser Gewohnheit sind. Das Wiederholen der Idee, dass Sie sich ändern können, stärkt Ihren Willen und Ihr Selbstvertrauen. Und mit der Unterbindung von sexuellen Gedanken, Inhalten und Fantasien + dem gesenkten Blick nehmen die Reize allmählich ab, das Verlangen schwächt sich ab, und dies hilft Ihnen, eine stärkere Kontrolle über sich selbst und Ihr Leben im Allgemeinen aufzubauen.",
+  "article4_sec4_title": "4- Einsamkeit und Wie Sie Die Hauptursache für Pornografie Ist",
+  "article4_sec4_desc": "Eines der wichtigsten Dinge zu verstehen ist, dass der Geist gegenüber pornografischen Gedanken schwächer ist, wenn Sie allein und isoliert sind, weil Einsamkeit mehr Raum zum Nachdenken und für Fantasien gibt. Deshalb ist es sehr wichtig, den Kreislauf der Isolation zu durchbrechen und immer in der Nähe von Menschen oder an einem Ort mit Bewegung und Geräuschen zu sein, auch wenn Sie nicht direkt mit ihnen sprechen. Wichtig ist, dass Sie nicht die ganze Zeit allein sind.",
+  "article4_sec4a_desc": "Eine der stärksten Methoden ist es auch, sich immer zu beschäftigen, denn das Gehirn kann sich nicht auf zwei Dinge gleichzeitig konzentrieren. Wenn Ihnen negative oder pornografische Gedanken kommen, stehen Sie sofort auf und ändern Sie Ihre Situation: Lernen Sie, bewegen Sie sich, setzen Sie sich zu Ihrer Familie oder machen Sie irgendeine einfache Aktivität. Nach ein paar Minuten werden Sie feststellen, dass die Gedanken zu verschwinden beginnen, weil Sie Ihren Geist mit etwas anderem beschäftigt haben.",
+  "article4_sec4b_desc": "Wie man sagt: 'Wenn du dich nicht mit der Wahrheit beschäftigst, beschäftigt sich die Falschheit mit dir.' Das bedeutet, dass Untätigkeit ein Hauptgrund für die Rückkehr dieser Gedanken ist, während Beschäftigung sie schnell bricht und Ihre Konzentration auf Ihren natürlichen Zustand zurückbringt.",
+  "article4_sec5_title": "5- Durchführung von Kegel-Übungen",
+  "article4_sec5_desc": "Hier sprechen wir über die organischen Auswirkungen von Pornografie und Masturbation und wie Kegel-Übungen helfen können, die Auswirkungen sexueller Reize zu reduzieren. Kegel-Übungen zielen auf die Beckenbodenmuskulatur ab und helfen, die Kontrolle über diesen Bereich zu verbessern und die körperliche Kontrolle im Allgemeinen zu stärken.",
+  "kegel_note_title": "Wichtiger Hinweis:",
+  "kegel_note_desc": "Sie können auf YouTube oder im Internet nach der korrekten Durchführung von Kegel-Übungen suchen, und Sie werden detaillierte Erklärungen finden, die Ihnen helfen, sie richtig anzuwenden und bestmöglich davon zu profitieren.",
+  "article4_sec5a_desc": "Einfach ausgedrückt: Bei übermäßiger Masturbation kann es zu einem unausgeglichenen Anstieg der Durchblutung der Genitalbereiche kommen, während die regelmäßige Durchführung dieser Übungen hilft, die Durchblutung zu verbessern und die Muskeln zu stärken, wodurch die Kontrolle verbessert und übermäßige Erregung reduziert wird. Daher wird empfohlen, Kegel-Übungen täglich durchzuführen (zu Beginn beispielsweise zweimal täglich), und nach einer Weile können Sie sie je nach Fähigkeit allmählich reduzieren. Sie gehören zu den körperlichen Gewohnheiten, die den Genesungsprozess im Laufe der Zeit erheblich unterstützen können.",
+  "article4_sec6_title": "6- Befolgung einer Geeigneten Ernährung",
+  "article4_sec6_desc": "Die Ernährung hat einen sehr erheblichen Einfluss auf den körperlichen und geistigen Zustand und folglich auf das hormonelle Gleichgewicht und den sexuellen Appetit. Deshalb ist es wichtig, auf Ihre Nahrung zu achten und sie so gesund wie möglich zu gestalten, wie z. B. täglich Gemüse zu essen, ausreichend Wasser zu trinken und nützliche Quellen wie Eier und Fleisch zu sich zu nehmen. Gleichzeitig müssen Sie verarbeitete und ungesunde Lebensmittel wie Chips, Cracker und Limonaden reduzieren, da sie Lethargie, Stimmungsschwankungen verursachen und das Gleichgewicht von Körper und Hormonen beeinträchtigen können.",
+  "article4_sec6a_desc": "Zu den Tipps, die indirekt helfen könnten, das Verlangen zu reduzieren: Knoblauch in Maßen essen, da er angeblich hilft, übermäßige Durchblutung der Genitalbereiche zu reduzieren, und auch die Beachtung von Lebensmitteln, die für die Verdauung nützlich sind, wie Äpfel, Apfelwein und Olivenöl. Was Brot betrifft, wird empfohlen, es in Maßen zu konsumieren, 2-3 Brote pro Tag je nach Bedarf des Körpers, da übermäßiger Verzehr Verdauungsprobleme verursachen kann, aber gleichzeitig wird eine vollständige Eliminierung nicht empfohlen. Die Grundidee ist, dass eine ausgewogene Ernährung hilft, den Körper und die Hormone zu stabilisieren, wodurch negative Auswirkungen auf die psychische und sexuelle Gesundheit reduziert werden.",
+  "article4_sec7_title": "7- Nicht auf Genitalbereiche Schauen",
+  "article4_sec7_desc": "Eine der Methoden, die helfen, Masturbation zu reduzieren, ist es, das Betrachten der Genitalien zu vermeiden, besonders während der Zeit des Masturbationsstopps. Die Idee ist, dass das Gehirn das Betrachten dieser Bereiche mit erhöhter Stimulation und Verlangen assoziiert. Mit der Zeit, wenn Sie sich daran hindern, sie in alltäglichen Situationen wie im Badezimmer oder beim Reinigen zu betrachten, beginnen Sie, diese Assoziation allmählich zu durchbrechen, und somit nimmt die mit diesem Anblick verbundene Erregung erheblich ab. Es ist auch wichtig, dass Sie, nachdem Sie Ihre Notdurft im Badezimmer erledigt haben, sich waschen und schnell hinausgehen, ohne sich auf diese Bereiche zu konzentrieren oder an sie zu denken, um keine Gelegenheit für eine geistige Assoziation zu geben.",
+  "article4_sec7a_desc": "Auf der anderen Seite müssen wir verstehen, dass das größere Problem oft von der Pornografie selbst ausgeht, nicht nur von der Masturbation, denn das Ansehen von pornografischem Inhalt verursacht Sucht, lenkt das Denken ab und verursacht Stimmungsschwankungen und Konzentrationsschwäche. Im Falle des Stopps von Pornografie und der Reduzierung von Reizen wird die Kontrolle einfacher und die Symptome sind viel geringer.",
+  "article4_sec8_title": "8- Richtige Ausübung von Masturbation",
+  "article4_sec8_desc": "Die richtige Art, Masturbation auszuüben, ist, wenn Sie ein hohes oder gesteigertes Verlangen verspüren, dann üben Sie sie aus, aber ohne sich pornografische Videos anzusehen oder sich auf sexuelle Fantasien und Gedanken zu stützen. Die Idee hier ist, nur zu masturbieren, wenn das Verlangen ein hohes Niveau erreicht hat, um es zu entladen oder zu reduzieren. Mit der Zeit werden Sie feststellen, dass sich Ihr Geist an diese Methode gewöhnt, so dass er nicht mehr von unangemessenen Szenen beeinflusst wird, wie es früher der Fall war.",
+  "article4_sec8a_desc": "Studien haben gezeigt, dass die Trennung des Geistes von der Abhängigkeit von Szenen oder Fantasien während der Masturbation hilft, ihre negativen Auswirkungen zu reduzieren und die Praxis nur mit körperlichem Bedürfnis verbindet, wenn das Verlangen hoch ist, sei es aufgrund einer langen Abstinenzperiode oder aus anderen Gründen. Dieser Rat wird als eine der stärksten Methoden angesehen: Versuchen Sie, ohne Pornos oder sexuelle Fantasien zu masturbieren, wenn Sie nicht vollständig aufhören können. Aber wenn Sie aufhören können, ist es natürlich besser, überhaupt nicht zu praktizieren.",
+  "article4_sec9_title": "9- Vorteile des Beendens der Masturbation",
+  "article4_sec9_desc": "Das Beenden der Masturbation bringt Ihnen große Vorteile auf psychologischer und körperlicher Ebene und hilft Ihnen, Ihr Gleichgewicht und Ihre Konzentration wiederzugewinnen und bequemer und stabiler zu leben. Mit der Zeit werden Sie eine Verbesserung der Stimmung, erhöhtes Selbstvertrauen, höhere Aktivität und Vitalität sowie eine bessere Fähigkeit, sich zu konzentrieren und Ihre Ziele zu erreichen, feststellen.",
+  "article4_benefit1": "1- Ein natürlicheres Leben und psychisches Wohlbefinden ohne ständige Beschäftigung mit Pornografie.",
+  "article4_benefit2": "2- Verbesserte Stimmung, erhöhtes Selbstvertrauen und Selbstzufriedenheit.",
+  "article4_benefit3": "3- Gesteigerte Aktivität und Vitalität durch Gleichgewicht und Stabilität des Körpers.",
+  "article4_benefit4": "4- Größere Fähigkeit, sich zu konzentrieren, Ziele zu erreichen und Erfolg im Leben zu haben.",
+  "article4_benefit5": "5- Ein Gefühl des psychischen Wohlbefindens und der Nähe zu Gott durch das Unterlassen schädlicher Gewohnheiten.",
+  "article4_benefit6": "6- Aufbau eines besseren Lebens und schrittweise und klare Verwirklichung von Ambitionen.",
+  "article4_summary_title": "Umfassende Zusammenfassung der Reise und Genesung von der Masturbation",
+  "article4_summary_desc": "Letztendlich hängt die Genesung von der Masturbation in erster Linie von einer vollständigen Änderung Ihres Lebensstils ab, nicht nur von einer momentanen Entscheidung. Der wirkliche Anfang liegt in der Änderung der Denkweise und dem Glauben, dass Sie sich selbst kontrollieren und aus diesem Kreislauf ausbrechen können. Mit der Zeit hilft die Reduzierung von Reizen wie pornografischen Inhalten und die Vermeidung von Isolation und Untätigkeit erheblich, das Verlangen zu reduzieren und die Selbstkontrolle wiederzuerlangen. Denn je weniger äußere Einflüsse, desto mehr beruhigt sich der Geist und kehrt zu seinem natürlichen Gleichgewicht zurück.",
+  "article4_summarya_desc": "Auch die Beachtung einer gesunden Ernährung, die Organisation Ihres Tages, die Beschäftigung mit Zielen und die Ausübung unterstützender Gewohnheiten wie Kegel-Übungen, all diese Faktoren stärken den Willen und helfen Körper und Geist, sich zu stabilisieren. Mit der kontinuierlichen Befolgung dieser Schritte beginnt eine Person allmähliche Verbesserungen in Stimmung, Energie und Selbstvertrauen zu bemerken, und mit der Zeit kann sie ein ausgeglicheneres Leben führen, fernab der Gewohnheit, mit größerem Fokus auf ihre Ziele und ihr reales Leben.",
+  "article4_end_note": "Wenn Sie von diesem Artikel profitiert haben, folgen Sie uns auf Internet Galaxy, um weitere Tipps und Artikel zur Überwindung von Pornografie und negativen Gewohnheiten zu finden, zusätzlich zu Themen der Selbstentwicklung und Verbesserung des Lebensstils.",
+  "article4_enda_note": "Wir sehen uns bald in einem neuen Thema, und wir wünschen Ihnen eine erfolgreiche Reise zur positiven Veränderung. Frieden 👋",
+  "article4_download_title": "📥 Artikel als PDF herunterladen",
+  "article4_download_btn": "Klicken Sie hier zum Herunterladen...",
+
+  
+
+
+"EyeRest_Article": "ترجمة مقالة برنامج راحة العين.",
+
+  "eyerest_title": "👁️ Augenruhe-Programm – 20/20/20-Regel",
+  "article_author": "✍️ Von",
+  "eyerest_date": "24. Juli 2025",
+  "eyerest_intro_title": "Einleitung",
+  "eyerest_intro_desc": "Wenn Sie lange vor einem Computerbildschirm arbeiten, leiden Ihre Augen unter Überanstrengung. Das Programm <strong>Eye Rest</strong> wurde entwickelt, um Ihre Augen zu schützen, indem es die von Augenärzten empfohlene <strong>20/20/20-Regel</strong> befolgt: Alle 20 Minuten schauen Sie 20 Sekunden lang auf etwas, das 20 Fuß (ca. 6 Meter) entfernt ist.",
+  "eyerest_features_title": "Hauptfunktionen",
+  "eyerest_feature1": "⏱️ Anpassbarer Timer (von 1 bis 120 Minuten).",
+  "eyerest_feature2": "🌍 Unterstützung von drei Sprachen: Arabisch, Englisch, Deutsch.",
+  "eyerest_feature3": "🔊 Möglichkeit, den Alarmton zu ändern.",
+  "eyerest_feature4": "📊 Statistik der täglichen Pausenanzahl.",
+  "eyerest_feature5": "🖥️ Läuft im Hintergrund mit einem Symbol in der Taskleiste.",
+  "eyerest_feature6": "🚀 Option für automatischen Start beim Windows-Hochfahren.",
+  "eyerest_usage_title": "Verwendung",
+  "eyerest_usage1": "Öffnen Sie das Programm und stellen Sie den Zeitabstand zwischen den Alarmen ein.",
+  "eyerest_usage2": "Drücken Sie die Taste <strong>Timer starten</strong>.",
+  "eyerest_usage3": "Wenn die Zeit abgelaufen ist, schaltet das Programm vorübergehend den Bildschirm aus, um Sie an eine Pause zu erinnern.",
+  "eyerest_usage4": "Nach 20 Sekunden schaltet sich der Bildschirm automatisch wieder ein.",
+  "eyerest_summary_title": "Zusammenfassung:",
+  "eyerest_summary_desc1": "Indem Sie die <strong>20/20/20-Regel</strong> anwenden und regelmäßig das Programm <strong>Eye Rest</strong> nutzen, gönnen Sie Ihren Augen die Ruhe, die sie brauchen, und schützen sie vor Überanstrengung und langfristigen Schäden.",
+  "eyerest_summary_desc2": "Sich heute um Ihre Augen zu kümmern, ist eine Investition in Ihre zukünftige Sehkraft.",
+  "eyerest_footer_text": "Für weitere Informationen über das Programm besuchen Sie die",
+  "official_website": "offizielle Website",
+  "download_title": "📥 Herunterladen",
+  "download_btn": "Klicken Sie hier zum Herunterladen...",
+
+
+
+
+
+"Quit-smooking": "ترجمة مقالة الاقلاع عن التدخين",
+  
+  "article1_title": "Rauchen und seine schädlichen Auswirkungen auf Gesundheit und Gesellschaft",
+  "article_date": "24. Juli 2025",
+  "article1_intro_title": "Einleitung",
+  "article1_intro_desc": "Rauchen gilt als eine der gefährlichsten negativen Gesundheitsgewohnheiten weltweit. Es verursacht viele Krankheiten, die das Leben des Einzelnen und der Gesellschaft beeinträchtigen, und trotz kontinuierlicher Aufklärungskampagnen steigt die Zahl der Raucher.",
+  "article1_damages_title": "Hauptschäden des Rauchens",
+  "article1_damage1": "Erhöhtes Risiko für Herzerkrankungen und Schlaganfälle.",
+  "article1_damage2": "Schwächung des Atmungssystems und erhöhtes Lungenkrebsrisiko.",
+  "article1_damage3": "Verschlechterung der Mund- und Zahngesundheit und Auftreten von Mundgeruch.",
+  "article1_damage4": "Negative Auswirkungen auf Haut und allgemeines Erscheinungsbild durch Sauerstoffmangel.",
+  "article1_passive_title": "Passivrauchen",
+  "article1_passive_desc": "Die Schäden des Rauchens beschränken sich nicht nur auf den Raucher selbst, sondern betreffen auch seine Umgebung, insbesondere Kinder und schwangere Frauen. Dies wird als Passivrauchen bezeichnet und ist eine Hauptursache für Atemwegserkrankungen bei Kindern.",
+  "article1_quit_title": "Wie kann man mit dem Rauchen aufhören?",
+  "article1_quit1": "Entscheiden Sie aufrichtig, dass Sie aufhören wollen.",
+  "article1_quit2": "Suchen Sie Unterstützung bei Familie oder Freunden.",
+  "article1_quit3": "Verwenden Sie bei Bedarf Nikotinersatzstoffe.",
+  "article1_quit4": "Ersetzen Sie die schlechte Angewohnheit durch gesunde Gewohnheiten wie Sport.",
+  "article1_footer_note": "📌 Für weitere Informationen besuchen Sie die Website der <a href=\"https://www.who.int/de/news-room/fact-sheets/detail/tobacco\" target=\"_blank\">Weltgesundheitsorganisation - Tabak</a>",
+
+
+
+
+"Make-money-online": "ترجمة مقالة كسب المال عبر الإنترنت",
+  
+  "article2_title": "Beste Wege, um online Geld zu verdienen für Anfänger (Umfassender Leitfaden 2025)",
+  "article2_intro": "Geld online zu verdienen ist kein Traum mehr, sondern eine greifbare Realität, die Millionen auf der ganzen Welt erleben. In diesem Leitfaden erfahren wir, welche besten zuverlässigen Methoden jeder Anfänger nutzen kann, um seine Reise zur Erzielung eines Einkommens online zu beginnen.",
+  "article2_sec1_title": "1. Freelancing",
+  "article2_freelance_platform_1": "Fiverr",
+  "article2_freelance_platform_2": "Upwork",
+  "article2_freelance_platform_3": "Freelancer",
+  "article2_freelance_platform_4": "PeoplePerHour",
+  "article2_affiliate_platform_1": "Amazon Affiliate",
+  "article2_affiliate_platform_2": "ClickBank",
+  "article2_affiliate_platform_3": "AliExpress Affiliate",
+  "article2_store_platform_1": "Shopify",
+  "article2_store_platform_2": "WooCommerce",
+  "article2_store_platform_3": "Etsy",
+  "article2_sec1_desc": "Freelancing ist der direkteste Weg, um online Geld zu verdienen, und umfasst die Bereitstellung von Dienstleistungen wie Design, Programmierung, Schreiben und anderen über digitale Plattformen.",
+  "article2_sec2_title": "2. Content-Erstellung und Blogging",
+  "article2_sec2_desc": "Wenn Sie die Fähigkeit zum Ausdruck, Erklären oder Filmen haben, können Sie visuelle oder schriftliche Inhalte über einen Blog oder YouTube-Kanal erstellen und Einnahmen durch Anzeigen, Sponsoring oder Produktverkäufe erzielen.",
+  "article2_sec3_title": "3. Affiliate-Marketing",
+  "article2_sec3_desc": "Durch Affiliate-Marketing bewerben Sie Produkte und erhalten einen Prozentsatz jedes über Sie getätigten Verkaufs. Es gilt als einer der einfachsten und schnellsten Wege, passives Einkommen zu erzielen.",
+  "article2_sec4_title": "4. E-Commerce",
+  "article2_sec4_desc": "Wenn Sie digitale oder physische Produkte haben, können Sie einen Online-Shop erstellen und diese direkt verkaufen. Es gibt einfache Plattformen, um Ihren eigenen Shop zu starten, wie Shopify und WooCommerce.",
+  "article2_tips_title": "💡 Tipps für den Erfolg beim Geldverdienen online",
+  "article2_tip1": "Beginnen Sie in einem Bereich, den Sie lieben und den Sie kontinuierlich weiterentwickeln können.",
+  "article2_tip2": "Lernen Sie von vertrauenswürdigen Quellen und halten Sie sich von Websites fern, die schnelle Gewinne versprechen.",
+  "article2_tip3": "Erstellen Sie einen klaren Arbeitsplan und nehmen Sie sich täglich Zeit für Arbeit und Entwicklung.",
+  "article2_tip4": "Seien Sie geduldig, denn Ergebnisse kommen nicht über Nacht.",
+  "article2_summary_title": "📌 Zusammenfassung",
+  "article2_summary_desc": "Die heute online verfügbaren Möglichkeiten sind grenzenlos, und alles, was Sie brauchen, ist der Wille, einige Fähigkeiten und Geduld. Beginnen Sie noch heute in einem Bereich, der zu Ihnen passt, und Sie werden überrascht sein von den Ergebnissen innerhalb weniger Monate.",
+
+
+
+
+
+"Lowering the Gaze": "ترجمة مقالة غض البصر",
+  
+  "article3_title": "Die großen Geheimnisse des gesenkten Blicks und seine verborgenen Vorteile",
+  "article3_date": "24. Juli 2025",
+  "article3_intro_title": "Einleitung",
+  "article3_intro_desc": "Den Blick zu senken ist nicht nur eine religiöse Anweisung, sondern vielmehr eine große Tür zur geistigen und psychischen Gelassenheit. Der Islam hat es befohlen und der Prophet ﷺ hat es aus großer Weisheit empfohlen, die über den flüchtigen Moment des Hinsehens hinausgeht. In diesem Artikel enthüllen wir Ihnen die großen und verborgenen Geheimnisse, die viele nicht über das Senken des Blicks wissen, und seine wahre Auswirkung auf das Leben eines Menschen.",
+  "article3_sec1_title": "Was passiert, wenn man den Blick nicht senkt?",
+  "article3_sec1_desc": "Wenn man unangemessene Bilder oder Szenen betrachtet, werden diese Bilder im Unterbewusstsein gespeichert. Satan nutzt sie später, um die Person in Schwäche momenten daran zu erinnern, was zu wiederholten Imaginationen und ständigen Gedanken führt und dazu führen kann, in Begierden, Zwangsvorstellungen und eine geistige und emotionale Bindung an diese Bilder abzudriften.",
+  "article3_sec2_title": "Die großen Vorteile des gesenkten Blicks",
+  "article3_sec2_li1": "Schließen der Tür, durch die Satan eintritt.",
+  "article3_sec2_li2": "Geistige und psychische Ruhe durch Reduzierung übermäßigen Denkens über verbotene Dinge.",
+  "article3_sec2_li3": "Schutz der Gehirnzellen vor geistiger Erschöpfung und Ablenkung.",
+  "article3_sec2_li4": "Steigerung der Konzentration bei Studium und Arbeit und Stärkung von Gedächtnis und Verständnis.",
+  "article3_sec2_li5": "Innere Klarheit und emotionale Stabilität fernab von psychischen Schwankungen, die durch anregende Bilder verursacht werden.",
+  "article3_sec3_title": "Den Blick senken gilt auch für Frauen",
+  "article3_sec3_desc": "So wie Männer aufgefordert sind, ihren Blick zu senken, werden auch Frauen aufgefordert, sich nicht an das äußere Erscheinungsbild junger Männer zu binden oder übermäßig über sie nachzudenken, da derselbe Mechanismus der Wiederholung und satanischen Einflüsterung für beide Seiten gilt. Das Senken des Blicks schützt sowohl Herz als auch Verstand, für Männer und Frauen gleichermaßen.",
+  "article3_sec4_title": "Warum hat uns der Prophet befohlen, den Blick zu senken?",
+  "article3_sec4_desc": "Allah der Allmächtige sagte: <strong>\"Und was der Gesandte euch gibt, das nehmt; und was er euch verbietet, das unterlasst\"</strong> [Al-Hashr: 7]. Der Prophet ﷺ hat nicht alles im Detail erklärt, denn in der Befolgung seiner Befehle liegt alles Gute, und das Senken des Blicks ist einer jener Befehle, die große Vorteile in sich tragen, die wir nur durch Erfahrung erkennen.",
+  "article3_footer_note": "📌 Für weitere Vorteile zum Senken des Blicks können Sie den Artikel <a href=\"https://islamqa.info/de/answers/20229\" target=\"_blank\">Urteil über das Senken des Blicks und seine Vorteile</a> auf der Website Islam Q&A lesen.",
+  "article3_footer_dua": "🎁 Ein Gebet für Sie: <strong>\"Möge unser Herr Ihnen Freude und Entschädigung für jede Traurigkeit und jeden Schmerz in Ihrem Leben gewähren, die alle Geschöpfe staunen lässt, denn Er ist der Großzügigste, der Majestätische\"</strong>, sagen Sie Amin 🙏"
+}
