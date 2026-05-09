@@ -196,6 +196,95 @@ document.addEventListener("DOMContentLoaded", () => {
       dropdown.style.display = "none";
     }, { passive: true });
   });
+
+
+
+  window.addEventListener("load", () => {
+
+  const nav = document.querySelector(".navbar-scroll");
+  if (!nav) return;
+  // الكود التالي يؤكد عمل التمرير مرة واحدة فقط 
+  if (localStorage.getItem("swipeDone")) return;
+
+  function waitForContent(callback) {
+    const images = nav.querySelectorAll('img');
+    let imagesToLoad = images.length;
+    
+    if (imagesToLoad === 0) {
+      callback();
+      return;
+    }
+    
+    let loadedImages = 0;
+    images.forEach(img => {
+      if (img.complete) {
+        loadedImages++;
+      } else {
+        img.addEventListener('load', () => {
+          loadedImages++;
+          if (loadedImages === imagesToLoad) callback();
+        });
+        img.addEventListener('error', () => {
+          loadedImages++;
+          if (loadedImages === imagesToLoad) callback();
+        });
+      }
+    });
+    
+    setTimeout(callback, 500);
+  }
+
+  waitForContent(() => {
+    
+    if (nav.scrollWidth <= nav.clientWidth) return;
+
+    const isRTL = document.documentElement.dir === "rtl";
+    const hiddenWidth = nav.scrollWidth - nav.clientWidth;
+    const distance = Math.min(hiddenWidth * 0.8, 350);
+    const moveDistance = Math.max(distance, 80);
+    const duration = 1200;
+    
+    // دالة للتمرير بسلاسة باستخدام scrollBy
+    function smoothScrollBy(deltaX, duration) {
+      const startTime = performance.now();
+      const startScrollLeft = nav.scrollLeft;
+      
+      function animate(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = 0.5 - Math.cos(progress * Math.PI) / 2;
+        
+        nav.scrollLeft = startScrollLeft + (deltaX * ease);
+        
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        }
+      }
+      
+      requestAnimationFrame(animate);
+    }
+    
+    setTimeout(() => {
+      // في LTR: deltaX موجبة (للتحرك لليمين)
+      // في RTL: deltaX سالبة (للتحرك لليمين أيضاً لأن RTL معكوس)
+      // أفضل حل: نجبر الحركة على أن تكون باتجاه +moveDistance بغض النظر عن RTL/LTR
+      const deltaX = isRTL ? -moveDistance : moveDistance;
+      
+      // التحرك للأمام
+      smoothScrollBy(deltaX, duration);
+      
+      // العودة للخلف
+      setTimeout(() => {
+        smoothScrollBy(-deltaX, duration);
+      }, duration + 200);
+      
+    }, 800);
+    
+    // localStorage.setItem("swipeDone", "true");
+  });
+});
+});
+
 });
 
 
