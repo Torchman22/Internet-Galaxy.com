@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Internet Galaxy</title>
+
+        <!-- ⭐ هام: hreflang.js يجب أن يكون هنا في <head> ⭐ -->
+        <script src="/js/hreflang.js"></script>
 
         <!--connect with external CSS-->
         <link rel="stylesheet" href="CSS/Style.css">
@@ -23,23 +26,94 @@
 </script>
     </head>
     <body>
-        <ul class="navbar">                                            
-  <li><div class="logo-box1">IG</div></li>       
-  <li><a href="./">Home</a></li>
-  <li><a href="Programs.html">Programs</a></li>
-  <li><a href="Articles.html">Articles</a></li>
-  <li><a href="About.html">About</a></li>
- 
-   <li class="spacer"></li> <!-- أضف هذا السطر -->
+        <!-- navbar and logo -->                                                                           <!--start-->                                                 
+<ul class="normal_navbar">                                            
+
+  <li><div class="logo-box1">IG</div></li>
+
+  <li><a href="index.html" data-lang="home"></a></li>                                                    
+  <li><a href="Programs.html" data-lang="programs"></a></li>
+  <li><a href="Articles.html" data-lang="articles"></a></li>
+  <li><a href="About.html" data-lang="about"></a></li>
+
+
+
+  <li class="lang-menu"> 
+  <div class="selected-lang" id="current-lang"></div> 
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
 
   <li class="search-container">
     <div class="search-box">
-      <input type="text" placeholder="Search..." name="search">
+      <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
       <span class="search-icon">🎯</span>
     </div>
   </li>
-</ul>
-        <h1 class="h1">About :</h1>
+</ul>                                                              
+         
+
+<!-- الموبايل - الشريط العلوي للوضع الصغير -->
+<div class="mobile_navbar">
+  <div class="navbar-scroll">
+    <ul>
+
+      <li><div class="logo-box1-2">IG</div></li>
+
+      <li><a href="index.html" data-lang="home"></a></li>
+      <li><a href="Programs.html" data-lang="programs"></a></li>
+      <li><a href="Articles.html" data-lang="articles"></a></li>
+      <li><a href="About.html" data-lang="about"></a></li>
+
+
+      <li class="lang-menu2"> 
+  <div class="selected-lang2" id="current-lang-mobile"></div>
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
+      <li class="search-container">
+        <div class="search-box">
+          <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
+          <span class="search-icon">🎯</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div> 
+       <h1 class="h1" data-lang="_about"></h1>
 
         <!-- مسافة بسيطة تحت العنوان -->
 <div class="spacer"></div>
@@ -55,18 +129,15 @@
 
   <main class="main-area">
     <div class="article arabic">
-    <h2 style="font-family: 'Cairo', sans-serif;">عن الموقع</h2>
-<p style="font-size: 1.1em; line-height: 1.8; font-family: 'Cairo', sans-serif;">
-موقع <strong>Internet Galaxy</strong> هو وجهتك الشاملة للمقالات التي تثري حياتك وتوسع مداركك. نقدم محتوى مميزًا في مواضيع متنوعة تلامس جوانب الحياة اليومية، من تصحيح المعتقدات الشائعة إلى تعزيز الصحة النفسية والجسدية، وتمكينك باستراتيجيات فعالة للعيش بوعي ونجاح. نهدف إلى تقديم المعرفة بطريقة مبسطة، ممتعة، وموثوقة، تُلهمك للتغيير الإيجابي وتنمية الذات في كل مرحلة من حياتك.
-</p>
+    <h2 style="font-family: 'Cairo', sans-serif;" data-lang="about_title"></h2> 
 
+      <p style="font-size: 1.1em; line-height: 1.8; font-family: 'Cairo', sans-serif;" data-lang="about_desc"></p> 
 
-<hr style="margin: 40px 0; border: none; border-top: 2px solid #ccc;">
+      <hr style="margin: 40px 0; border: none; border-top: 2px solid #ccc;"> 
 
-<h2 style="font-family: 'Cairo', sans-serif;">تواصل معنا</h2>
-<p style="font-size: 1.1em; font-family: 'Cairo', sans-serif;">
-هل لديك اقتراح أو استفسار؟ يسعدنا تواصلك معنا عبر البريد الإلكتروني التالي:
-</p>
+      <h2 style="font-family: 'Cairo', sans-serif;" data-lang="contact_title"></h2> 
+
+      <p style="font-size: 1.1em; font-family: 'Cairo', sans-serif;" data-lang="contact_desc"></p>                    
 
 <p style="font-size: 1.1em; direction: ltr; font-weight: bold; font-family: 'Cairo', sans-serif;">
 <a id="smartEmailLink" href="mailto:af8026157@gmail.com" class="email-link">af8026157@gmail.com</a> 📧 
@@ -96,17 +167,17 @@
   <div class="footer-divider"></div>
 
   <div class="footer-right">
-    <div class="footer-links">
-      <a href="./">Home</a>
-      <a href="Programs.html">Programs</a>
-      <a href="Articles.html">Articles</a>
-    </div>
-    <div class="footer-links">
-      <a href="About.html">About</a>
-      <a href="About.html">Contact</a>
-    </div>
-  </div>
-</footer>
+    <div class="footer-links">                                                                                     <!--start-->
+        <a href="../../../index.html" data-lang="home"></a>
+        <a href="../../../Programs.html" data-lang="programs"></a>
+        <a href="../../../Articles.html" data-lang="articles"></a>
+      </div> 
+
+      <div class="footer-links"> 
+        <a href="../../../About.html" data-lang="about"></a>
+        <a href="../../../About.html" data-lang="contact"></a>
+      </div>
+  </footer>                                                                                                          <!--end-->
 
 <div class="footerBottom">
         <p>Copyright &copy;2025; Designed by <span class="designer">Trochman</span></p>
@@ -114,6 +185,7 @@
 
         <!-- ملف JavaScript في نهاية الصفحة لتحسين الأداء -->
         <script src="JavaScript/script.js"></script>
+        <script src="JavaScript/lang.js"></script>    
     </body>
 </html>
 
