@@ -25,7 +25,11 @@
   width: 100%;
 }
 
-.navbar {
+/*لاحظ كود navbar لا يعمل ولكن تم تركه لوقت الحاجة له*/                                                                                         /*start*/
+/*The navbar modification was not deleted and was left for when it's needed. This means if you want to modify
+ something and want the navbar to be language-neutral and animated, just type "navbar" without "normal" or "mobile".*/                         /*End*/
+.navbar {  
+  overflow: visible; /* مهم جداً */ 
   overflow-x: auto;        /* يسمح بالتمرير الأفقي */
   overflow-y: visible;     /* للسماح للقائمة المنسدلة بالظهور */
   white-space: nowrap;     /* يمنع العناصر من النزول لسطر جديد */
@@ -125,9 +129,30 @@
   transform: translateY(-100%);
 }
 
-/* تحسين صندوق البحث */
+/*تعديل على النص في الشريط العلوي في الحالة العربية*/                                           /*start*/
+html[dir="rtl"] .normal_navbar a,
+html[dir="rtl"] .mobile_navbar a {
+  font-size: 18px;
+  font-weight: 600;
+}                  
+
+html[dir="rtl"] .footer-links a {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+
+                                                                         /*end*/
+
+
+
+
+
+/* تحسين صندوق البحث */                                                        /*start*/
 .search-container {
-  padding-right: 20px;                                     
+  padding-right: 20px;
+  padding-left: 20px;                                     
   display: flex;
   align-items: center;
 }
@@ -150,7 +175,7 @@
   transition: width 0.4s ease-in-out;
 }
 
-.search-box input[type="text"]::placeholder {
+.search-box input[type="text"]::placeholder{
   color: #aaa;
 }
 
@@ -163,6 +188,18 @@
   font-size: 18px;
   pointer-events: none; /* لا تجعل العدسة قابلة للنقر */
 }
+
+/* ⭐ الوضع الإنجليزي (LTR) — كما هو */
+html[dir="ltr"] .search-icon {
+  right: 12px;
+  left: auto;
+}
+
+/* ⭐ الوضع العربي (RTL) — يتحول لليسار */
+html[dir="rtl"] .search-icon {
+  left: 12px;
+  right: auto;
+}                                                                                               /*end*/
 
 /*سطر برمجي لدفع العناصر لاقصى اليمين لحل مشكلة صندوق البحث في حالة عدم وجود قائمة لغة*/
 .spacer {
@@ -381,8 +418,8 @@ body {
   line-height: 1.6;
 }
 
-/*طريقة جميلة جدا لحل مشكلة القالات العربية في صفحة بالانجليزية
-اي جعلهامن اليمين لليسار دون التاثير على بقية العناص في الصفحة باكملها 
+/*طريقة جميلة جدا لحل مشكلة المقالات العربية في صفحة بالانجليزية
+اي جعلها من اليمين لليسار دون التاثير على بقية العناصر في الصفحة باكملها 
 وهي وضع اسم للمقالة ووضع نقتطان قبل الاسم في css*/
 /*here we but dot in the middle becuse its a space and spaces is dots*/
 .article.arabic {
@@ -516,7 +553,7 @@ body {
   border-radius: 4px;
 
   margin-left: 15px; /* 👈 هذا يبعده قليلاً عن جهة اليسار */
-  margin-right: 8px;
+  margin-right: 15px;                                                                                /*new*/
 }
 
 .logo-box1-2{
@@ -719,225 +756,443 @@ body {
   width: 0%;
   height: 4px;
   background: #e76c0f; /* أزرق فاتح */
-  z-index: 9999;
+  z-index: 1000;  /*ظهور شريط التقدم اسفل قائمة اللغات , لان قيمته اقل*/
   transition: transform 0.3s ease, width 0.1s ease;
   margin-top: 0 ;
   padding-top: 0 ;
 }                                                        
  
 
-
-
-
-.lang-menu {                                                        /*Start*/
-    width: 100px;
-    text-align: right;
-    font-weight: bold;
-    margin-top: 5px;
-    position: relative;
-    color: rgb(218, 215, 215);
-    margin-left: auto;
-    padding-right: 40px;
-    padding-left: 30px;
-     
-}
-.lang-menu .selected-lang {
-    display: flex;   
-    justify-content: space-between;
-    line-height: 2;
-    cursor: pointer;
-}
-.lang-menu .selected-lang:before {
-    content: '';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-     
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
+/*قائمة اللغة في الوضع العادي*/
+.lang-menu {                                                        /*Start*/ 
+    width: 100px; 
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 5px; 
+    position: relative; 
+    color: rgb(218, 215, 215); 
+    padding-right: 20px; 
+    padding-left: 20px; 
+      
+} 
+.lang-menu .selected-lang { 
+    display: flex;    
+    justify-content: space-between; 
+    line-height: 2; 
+    cursor: pointer; 
+} 
+.lang-menu .selected-lang:before { 
+    content: ''; 
+    display: inline-block; 
+    width: 32px; 
+    height: 32px; 
+      
+    background-size: contain; 
+    background-repeat: no-repeat; 
+} 
+ 
 .lang-menu ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 8px;
-  background-color: rgb(255, 255, 255);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  z-index: 9999;
-  border-radius: 8px; /* إضافة الزوايا المنحنية */
-  overflow: hidden; /* لعدم خروج العناصر عن الإطار */
+  position: absolute; 
+  top: 100%; 
+  left: 8px; 
+  background-color: rgb(178, 177, 177); 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+  z-index: 10000; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  min-width: 120px; /* ⭐ NEW */
+
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 0.25s ease;
+} 
+
+ 
+/* ⭐ NEW: جعل العناصر تحت بعضها */
+.lang-menu ul li { 
+    list-style: none; 
+    display: block; 
+} 
+ 
+.lang-menu ul li a { 
+  color: rgb(51, 50, 50); 
+    text-decoration: none; 
+    width: 125px; 
+    padding: 8px 12px; /* تحسين بسيط */
+    display: flex; /* ⭐ NEW */
+    align-items: center; /* ⭐ NEW */
+    gap: 10px; /* ⭐ NEW */
+} 
+ 
+.lang-menu ul li:hover { 
+    background-color: #f2f2f2; 
+} 
+ 
+/*عرض الاعلام في القائمة والشريط العلوي*/
+/* ⭐ الأساس (للكل) */
+.lang-menu ul li a::before,
+.selected-lang::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-
-.lang-menu ul li {
-    list-style: none;
-     
-    display: flex;
-    justify-content: space-between;
+/* 🇺🇸 English */
+[data-set-lang="en"]::before,
+.selected-lang.en::before {
+  background-image: url(https://flagsapi.com/US/flat/32.png);
 }
 
-.lang-menu ul li a {
-  color: rgb(218, 215, 215);
-    text-decoration: none;
-    width: 125px;
-    padding: 5px 10px;
-    display: block;
+/* 🇦🇪 Arabic */
+[data-set-lang="ar"]::before,
+.selected-lang.ar::before {
+  background-image: url(https://flagsapi.com/AE/flat/32.png);
 }
 
-.lang-menu ul li:hover {
-    background-color: #f2f2f2;
+/* 🇫🇷 French */
+[data-set-lang="fr"]::before,
+.selected-lang.fr::before {
+  background-image: url(https://flagsapi.com/FR/flat/32.png);
 }
 
-.lang-menu ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
+/* 🇩🇪 German */
+[data-set-lang="de"]::before,
+.selected-lang.de::before {
+  background-image: url(https://flagsapi.com/DE/flat/32.png);
 }
 
-.en:before {
-    background-image: url(https://flagsapi.com/US/flat/32.png);
+/* 🇪🇸 Spanish */
+[data-set-lang="es"]::before,
+.selected-lang.es::before {
+  background-image: url(https://flagsapi.com/ES/flat/32.png);
+}
+
+/* 🇨🇳 Chinese */
+[data-set-lang="zh"]::before,
+.selected-lang.zh::before {
+  background-image: url(https://flagsapi.com/CN/flat/32.png);
+}
+
+/* 🇮🇳 Hindi */
+[data-set-lang="hi"]::before,
+.selected-lang.hi::before {
+  background-image: url(https://flagsapi.com/IN/flat/32.png);
+}
+
+/* 🇯🇵 Japanese */
+[data-set-lang="ja"]::before,
+.selected-lang.ja::before {
+  background-image: url(https://flagsapi.com/JP/flat/32.png);
+}
+
+/* 🇮🇩 Indonesian */
+[data-set-lang="id"]::before,
+.selected-lang.id::before {
+  background-image: url(https://flagsapi.com/ID/flat/32.png);
+}
+
+/* 🇰🇷 Korean */
+[data-set-lang="ko"]::before,
+.selected-lang.ko::before {
+  background-image: url(https://flagsapi.com/KR/flat/32.png);
+}
+
+/* 🇷🇺 Russian */
+[data-set-lang="ru"]::before,
+.selected-lang.ru::before {
+  background-image: url(https://flagsapi.com/RU/flat/32.png);
 }
  
-.ar:before {
-    background-image: url(https://flagsapi.com/AE/flat/32.png);
+.lang-menu:hover ul { 
+    display: block; 
+} 
+ 
+/* ⭐ NEW: محاذاة حسب اللغة */
+html[dir="rtl"] .lang-menu ul {
+  text-align: right;
+}
+
+html[dir="ltr"] .lang-menu ul {
+  text-align: left;
 }
 
 
+/* عند hover تظهر بسلاسة */
 .lang-menu:hover ul {
-    display: block;
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
-/*to change the flag in each main page*/
-.selected-lang.en:before {
-  content: '';
+/* ⭐ تحسين المحاذاة حسب اللغة */
+html[dir="rtl"] .lang-menu ul li a {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+html[dir="ltr"] .lang-menu ul li a {
+  text-align: left;
+}
+
+/*لتحريك العلم يمينا قليلا او يسارا قليلا*/
+ .lang-menu ul li a::before { 
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/*(@) هذا الجزء حذفه لا يؤثر بشئ*/
+/* ⭐ الأساس */
+.lang-menu ul a::before,
+.selected-lang2::before {
+  content: "";
   display: inline-block;
   width: 32px;
   height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* English */
+.lang-menu ul a[data-set-lang="en"]::before,
+.selected-lang2.en::before {
   background-image: url(https://flagsapi.com/US/flat/32.png);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
-.selected-lang.ar:before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
+/* Arabic */
+.lang-menu ul a[data-set-lang="ar"]::before,
+.selected-lang2.ar::before {
   background-image: url(https://flagsapi.com/AE/flat/32.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}                                                                   /*End*/
+}
+
+/* French */
+.lang-menu ul a[data-set-lang="fr"]::before,
+.selected-lang2.fr::before {
+  background-image: url(https://flagsapi.com/FR/flat/32.png);
+}
+
+/* German */
+.lang-menu ul a[data-set-lang="de"]::before,
+.selected-lang2.de::before {
+  background-image: url(https://flagsapi.com/DE/flat/32.png);
+}
+
+/* Spanish */
+.lang-menu ul a[data-set-lang="es"]::before,
+.selected-lang2.es::before {
+  background-image: url(https://flagsapi.com/ES/flat/32.png);
+}
+
+/* Chinese */
+.lang-menu ul a[data-set-lang="zh"]::before,
+.selected-lang2.zh::before {
+  background-image: url(https://flagsapi.com/CN/flat/32.png);
+}
+
+/* Hindi (الهند) */
+.lang-menu ul a[data-set-lang="hi"]::before,
+.selected-lang2.hi::before {
+  background-image: url(https://flagsapi.com/IN/flat/32.png);
+}
+
+/* Japanese */
+.lang-menu ul a[data-set-lang="ja"]::before,
+.selected-lang2.ja::before {
+  background-image: url(https://flagsapi.com/JP/flat/32.png);
+}
+
+/* Indonesian */
+.lang-menu ul a[data-set-lang="id"]::before,
+.selected-lang2.id::before {
+  background-image: url(https://flagsapi.com/ID/flat/32.png);
+}       
+
+.lang-menu ul a[data-set-lang="ko"]::before,  
+.selected-lang2.ko::before {  
+  background-image: url(https://flagsapi.com/KR/flat/32.png);   
+}   
+
+.lang-menu ul a[data-set-lang="ru"]::before,
+.selected-lang2.ru::before {   
+  background-image: url(https://flagsapi.com/RU/flat/32.png);   
+}
+/*(@)*/
+
+/*end*/                                                        
 
 
-/*التعديل على القائمة في وضع الهاتف */
+/*التعديل على القائمة في وضع الهاتف */                                     /*start*/
 
-.lang-menu2 {                                                        /*Start*/
+/* Language selector container */
+.lang-menu2 {
     width: 100px;
     text-align: right;
     font-weight: bold;
     margin-top: 9px;
-    position: relative;
+    position: relative;  /* مهم جداً */
     color: rgb(218, 215, 215);
     margin-left: auto;
     padding-right: 0px;
     padding-left: 20px;
-     
 }
 
+/* Selected language display */
 .lang-menu2 .selected-lang2 {
-    display: flex; 
-    align-items: center;  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 12px;
     line-height: 2;
     cursor: pointer;
 }
+
 .lang-menu2 .selected-lang2:before {
     content: '';
     display: inline-block;
     width: 32px;
     height: 32px;
-    vertical-align: middle; 
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.lang-menu2 ul {
-  position: fixed;
-  display: none;
-  background: white;
-  transform: translateX(5px); /* تزحزح 5px لليمين */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  z-index: 99999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-  border-radius: 6px;
-}
-
-
-.lang-menu2 ul li {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.lang-menu2 ul li a {
-  color: rgb(218, 215, 215);
-    text-decoration: none;
-    width: 80px;
-    padding: 5px 10px;
-    display: block;
-}
-
-.lang-menu2 ul li:hover {
-    background-color: #f2f2f2;
-}
-
-.lang-menu2 ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 25px;
-    height: 25px;
     vertical-align: middle;
-    margin-right: 10px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* Dropdown menu - حل الجوانب */
+.lang-menu2 ul {
+    position: absolute;
+    display: none;
+    background: rgb(178, 177, 177);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 99999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    width: 140px;  /* حجم ثابت */
+    top: 100%;  /* يظهر أسفل اللغة مباشرة */
+    right: 0;  /* يلتصق بالجهة اليمنى للغة */
+}
+
+/* في حالة RTL (العربية) */
+html[dir="rtl"] .lang-menu2 ul {
+    right: auto;
+    left: 0;  /* يلتصق بالجهة اليسرى للغة */
+}
+
+/* للشاشات الصغيرة - يمنع خروج القائمة عن الشاشة */
+@media (max-width: 480px) {
+    .lang-menu2 ul {
+        position: fixed;
+        top: auto;
+        bottom: auto;
+        width: 140px;  /* حجم ثابت لا يتغير */
+    }
+    
+    /* إذا كانت اللغة في أقصى اليمين */
+    html[dir="ltr"] .lang-menu2 ul {
+        right: 5px;  /* هامش صغير من اليمين */
+        left: auto;
+        top: 50px;  /* أسفل الشريط العلوي */
+    }
+    
+    /* إذا كانت اللغة في أقصى اليسار (للعربية) */
+    html[dir="rtl"] .lang-menu2 ul {
+        left: 5px;  /* هامش صغير من اليسار */
+        right: auto;
+        top: 50px;  /* أسفل الشريط العلوي */
+    }
 }
 
 .lang-menu2:hover ul {
     display: block;
 }
 
-/*to change the flag in each main page*/
-.selected-lang2.en:before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url(https://flagsapi.com/US/flat/32.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+/* Dropdown items */
+.lang-menu2 ul li {
+    list-style: none;
+    display: block;
 }
 
-.selected-lang2.ar:before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  background-image: url(https://flagsapi.com/AE/flat/32.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-} 
- 
+.lang-menu2 ul li a {
+    color: rgb(51, 50, 50);
+    text-decoration: none;
+    width: 140px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.lang-menu2 ul li:hover {
+    background-color: #f2f2f2;
+}
+
+/* Common flag icon styles */
+.lang-menu2 ul li a:before,
+.selected-lang2:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.selected-lang2:before {
+    width: 32px;
+    height: 32px;
+}
+
+/* Flag definitions */
+[data-set-lang]:before,
+.selected-lang2:before {
+    background-position: center;
+}
+
+/* Flag mapping */
+[data-set-lang="en"]:before,
+.selected-lang2.en:before { background-image: url(https://flagsapi.com/US/flat/32.png); }
+
+[data-set-lang="ar"]:before,
+.selected-lang2.ar:before { background-image: url(https://flagsapi.com/AE/flat/32.png); }
+
+[data-set-lang="fr"]:before,
+.selected-lang2.fr:before { background-image: url(https://flagsapi.com/FR/flat/32.png); }
+
+[data-set-lang="de"]:before,
+.selected-lang2.de:before { background-image: url(https://flagsapi.com/DE/flat/32.png); }
+
+[data-set-lang="es"]:before,
+.selected-lang2.es:before { background-image: url(https://flagsapi.com/ES/flat/32.png); }
+
+[data-set-lang="zh"]:before,
+.selected-lang2.zh:before { background-image: url(https://flagsapi.com/CN/flat/32.png); }
+
+[data-set-lang="hi"]:before,
+.selected-lang2.hi:before { background-image: url(https://flagsapi.com/IN/flat/32.png); }
+
+[data-set-lang="ja"]:before,
+.selected-lang2.ja:before { background-image: url(https://flagsapi.com/JP/flat/32.png); }
+
+[data-set-lang="id"]:before,
+.selected-lang2.id:before { background-image: url(https://flagsapi.com/ID/flat/32.png); }
+
+[data-set-lang="ko"]:before,
+.selected-lang2.ko:before { background-image: url(https://flagsapi.com/KR/flat/32.png); }
+
+[data-set-lang="ru"]:before,
+.selected-lang2.ru:before { background-image: url(https://flagsapi.com/RU/flat/32.png); }                                       /*end*/
+
+
+
+
 /*التعديل على البلوك بما يحتويه في صفحة programs*/
 .article-box-link {
   display: block;         /* يجعل الرابط يغطي البلوك بالكامل */
@@ -1005,9 +1260,142 @@ body {
 }
 
 
+                                                                                   /*start*/
+
+.navbar-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth; /* ⭐ هذا مهم */
+}
+                                                                                    
 
 
 
+/*التعديل على نصوص اللغات بشكل منفرد لكل لغة*/
+                                                                                    
+/* =========================
+   Arabic
+========================= */
+body.lang-ar .article-text,
+body.lang-ar .articles-container {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    line-height: 2;
+}
+
+/* =========================
+   English
+========================= */
+body.lang-en .article-text,
+body.lang-en .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+/* =========================
+   French
+========================= */
+body.lang-fr .article-text,
+body.lang-fr .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+/* =========================
+   German
+========================= */
+body.lang-de .article-text,
+body.lang-de .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9;
+}
+
+/* =========================
+   Spanish
+========================= */
+body.lang-es .article-text,
+body.lang-es .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+/* =========================
+   Chinese
+========================= */
+body.lang-zh .article-text,
+body.lang-zh .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Noto Sans SC', sans-serif;
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   Hindi
+========================= */
+body.lang-hi .article-text,
+body.lang-hi .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Noto Sans Devanagari', sans-serif;
+    line-height: 2;
+}
+
+/* =========================
+   Japanese
+========================= */
+body.lang-ja .article-text,
+body.lang-ja .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+
+/* =========================
+   Indonesian
+========================= */
+body.lang-id .main-area,
+body.lang-id .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+/* =========================
+   Korean
+========================= */
+body.lang-ko .article-text,
+body.lang-ko .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.9;
+}
+
+/* =========================
+   Russian
+========================= */
+body.lang-ru .article-text,
+body.lang-ru .articles-container {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.9;
+}
 
 
+                                                                                                    /*end*/
 
