@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr"> 
 <head>      
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internet Galaxy - programs</title>
+
+  <!-- ⭐ هام: hreflang.js يجب أن يكون هنا في <head> ⭐ -->
+        <script src="/js/hreflang.js"></script> 
 
   <!-- الاتصال بملف CSS -->
   <link rel="stylesheet" href="CSS/Style.css">
@@ -25,26 +28,96 @@
 </head>
 <body>
 
-  <!-- شريط التولبار -->
-  <ul class="navbar">                                            
-  <li><div class="logo-box1">IG</div></li>       
-  <li><a href="./">Home</a></li>
-  <li><a href="Programs.html">Programs</a></li>
-  <li><a href="Articles.html">Articles</a></li>
-  <li><a href="About.html">About</a></li>
- 
-   <li class="spacer"></li> <!-- أضف هذا السطر -->
+  <!-- navbar and logo -->                                                                           <!--start-->                                                 
+<ul class="normal_navbar">                                            
+
+  <li><div class="logo-box1">IG</div></li>
+
+  <li><a href="index.html" data-lang="home"></a></li>                                                    
+  <li><a href="Programs.html" data-lang="programs"></a></li>
+  <li><a href="Articles.html" data-lang="articles"></a></li>
+  <li><a href="About.html" data-lang="about"></a></li>
+
+
+
+  <li class="lang-menu"> 
+  <div class="selected-lang" id="current-lang"></div> 
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
 
   <li class="search-container">
     <div class="search-box">
-      <input type="text" placeholder="Search..." name="search">
+      <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
       <span class="search-icon">🎯</span>
     </div>
   </li>
-</ul>
+</ul>                                                              
+         
+
+<!-- الموبايل - الشريط العلوي للوضع الصغير -->
+<div class="mobile_navbar">
+  <div class="navbar-scroll">
+    <ul>
+
+      <li><div class="logo-box1-2">IG</div></li>
+
+      <li><a href="index.html" data-lang="home"></a></li>
+      <li><a href="Programs.html" data-lang="programs"></a></li>
+      <li><a href="Articles.html" data-lang="articles"></a></li>
+      <li><a href="About.html" data-lang="about"></a></li>
+
+
+      <li class="lang-menu2"> 
+  <div class="selected-lang2" id="current-lang-mobile"></div>
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
+      <li class="search-container">
+        <div class="search-box">
+          <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
+          <span class="search-icon">🎯</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>                                                                                                                   
 
   <!-- عنوان رئيسي -->
-  <h1 style="text-align: center; margin-top: 40px;" class="programs-title">Programs :</h1>
+  <h1 style="text-align: center; margin-top: 40px;" class="programs-title" data-lang="_programs"></h1>  
 
    
 
@@ -72,25 +145,25 @@
          alt="صورة المقال" 
          class="article-image"></div>
     <div class="article-content">
-  <h2>برنامج راحة العين – قاعدة 20/20/20</h2>
-  <p>احمِ عينيك من الإجهاد البصري أثناء العمل على الكمبيوتر، مع تنبيهات ذكية كل 20 دقيقة لراحة أفضل.</p>
-</div>
-</div>
-</a>
-<hr class="article-divider">
-
-    <!-- 🟦 المقالة الثانية -->
-<a href="articles/article2.html" class="article-box-link" data-id="article2">
-  <div class="article-box">
-    <div class="article-image-wrapper">
-      <img src="Images/article2/cover.jpg" alt="صورة المقال" class="article-image">
-    </div>
-    <div class="article-content">
-      <h2>برامج الحماية: ما الفرق بين Antivirus وFirewall؟</h2>
-      <p>هل تعرف الفرق بين برامج الحماية المختلفة؟ في هذا المقال نشرح الفرق وأيّهم تحتاج فعلاً لجهازك.</p>
-    </div>
-  </div>
-</a>
+  <h2 data-lang="b1_title"></h2>                                                                                                 <!--start-->
+<p data-lang="b1_desc"></p> 
+</div> 
+</div> 
+</a> 
+<hr class="article-divider"> 
+ 
+<!-- 🟦 المقالة الثانية --> 
+<a href="articles/Articles/Arabic Articles/Article-1 (smooking).html" class="article-box-link" data-id="article2"> 
+  <div class="article-box"> 
+    <div class="article-image-wrapper"> 
+      <img src="Images/article2/cover.jpg" alt="صورة المقال" class="article-image"> 
+    </div> 
+    <div class="article-content"> 
+      <h2 data-lang="b2_title"></h2> 
+      <p data-lang="b2_desc"></p> 
+    </div> 
+  </div>  
+</a>                
 <hr class="article-divider">
 
     <!-- يمكن تكرار بنفس التنسيق -->
@@ -121,17 +194,17 @@
   <div class="footer-divider"></div>
 
   <div class="footer-right">
-    <div class="footer-links">
-      <a href="./">Home</a>
-      <a href="Programs.html">Programs</a>
-      <a href="Articles.html">Articles</a>
-    </div>
-    <div class="footer-links">
-      <a href="About.html">About</a>
-      <a href="About.html">Contact</a>
-    </div>
-  </div>
-</footer>
+    <div class="footer-links">                                                                                     <!--start-->
+        <a href="../../../index.html" data-lang="home"></a>
+        <a href="../../../Programs.html" data-lang="programs"></a>
+        <a href="../../../Articles.html" data-lang="articles"></a>
+      </div> 
+
+      <div class="footer-links"> 
+        <a href="../../../About.html" data-lang="about"></a>
+        <a href="../../../About.html" data-lang="contact"></a>
+      </div>
+  </footer>                                                                                                          <!--end-->
 
 <div class="footerBottom">
         <p>Copyright &copy;2025; Designed by <span class="designer">Trochman</span></p>
@@ -140,6 +213,7 @@
   <!-- سكربت -->
   <script src="JavaScript/script.js"></script>
   <script src="JavaScript/Articles.js"></script>
+  <script src="JavaScript/lang.js"></script>      
 </body>
 </html>
 
