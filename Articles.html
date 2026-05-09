@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internet Galaxy</title>
+
+  <!-- ⭐ هام: hreflang.js يجب أن يكون هنا في <head> ⭐ -->
+        <script src="/js/hreflang.js"></script>
+  
   <link rel="stylesheet" href="CSS/Style.css">
   <!--site logo-->
   <link rel="icon" type="image/png" href="Images/logo/Icojam-Blue-Bits-Globe-search.ico">
@@ -20,26 +24,96 @@
 </script>
 </head>
 <body>
-  <!-- التولبار -->
-  <ul class="navbar">                                            
-  <li><div class="logo-box1">IG</div></li>       
-  <li><a href="./">Home</a></li>
-  <li><a href="Programs.html">Programs</a></li>
-  <li><a href="Articles.html">Articles</a></li>
-  <li><a href="About.html">About</a></li>
- 
-   <li class="spacer"></li> <!-- أضف هذا السطر -->
+  <!-- navbar and logo -->                                                                           <!--start-->                                                 
+<ul class="normal_navbar">                                            
+
+  <li><div class="logo-box1">IG</div></li>
+
+  <li><a href="index.html" data-lang="home"></a></li>                                                    
+  <li><a href="Programs.html" data-lang="programs"></a></li>
+  <li><a href="Articles.html" data-lang="articles"></a></li>
+  <li><a href="About.html" data-lang="about"></a></li>
+
+
+
+  <li class="lang-menu"> 
+  <div class="selected-lang" id="current-lang"></div> 
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
 
   <li class="search-container">
     <div class="search-box">
-      <input type="text" placeholder="Search..." name="search">
+      <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
       <span class="search-icon">🎯</span>
     </div>
   </li>
-</ul>
+</ul>                                                              
+         
+
+<!-- الموبايل - الشريط العلوي للوضع الصغير -->
+<div class="mobile_navbar">
+  <div class="navbar-scroll">
+    <ul>
+
+      <li><div class="logo-box1-2">IG</div></li>
+
+      <li><a href="index.html" data-lang="home"></a></li>
+      <li><a href="Programs.html" data-lang="programs"></a></li>
+      <li><a href="Articles.html" data-lang="articles"></a></li>
+      <li><a href="About.html" data-lang="about"></a></li>
+
+
+      <li class="lang-menu2"> 
+  <div class="selected-lang2" id="current-lang-mobile"></div>
+
+  <ul> 
+    <li><a href="#" data-set-lang="en">English</a></li> 
+    <li><a href="#" data-set-lang="ar">العربية</a></li> 
+    <li><a href="#" data-set-lang="fr">Français</a></li> 
+    <li><a href="#" data-set-lang="de">Deutsch</a></li> 
+    <li><a href="#" data-set-lang="es">Español</a></li> 
+
+    <li><a href="#" data-set-lang="zh">中文</a></li> 
+    <li><a href="#" data-set-lang="hi">हिन्दी</a></li> 
+    <li><a href="#" data-set-lang="ja">日本語</a></li> 
+    <li><a href="#" data-set-lang="id">Indonesia</a></li>
+    <li><a href="#" data-set-lang="ko">한국어</a></li> 
+    
+    <li><a href="#" data-set-lang="ru">Русский</a></li>
+  </ul> 
+</li>
+
+
+      <li class="search-container">
+        <div class="search-box">
+          <input type="text" data-lang="search_placeholder" placeholder="Search..." name="search">
+          <span class="search-icon">🎯</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
   
   <!-- عنوان الصفحة -->
-  <h1 class="page-title">Articles :</h1>
+  <h1 class="page-title" data-lang="_articles"></h1>
 
   
 
@@ -59,34 +133,25 @@
 
   <main class="main-area">
     <p><!-- (لاحظ طريقة التحويل للعربية اي من اليمين لليسار دون التاثير على باقي الصفحة) قائمة المقالات -->
-        <div class="article arabic">
-          <a href="Articles/Articles/arabic-articles/harmful-effects-of-smoking.html" class="article-box">
-    <span class="article-title">التدخين وأضراره على الصحة والمجتمع</span>
-    <p class="article-desc">
-        في هذا المقال نتحدث عن اهم اضرار التدخين وتوضيح كامل عن التدخين واضراره وكيفية التوقف عنه.
-    </p>
-</a>
+        <div class="article-text">                                                                                            <!--start-->
+          <a href="Articles/Articles/Arabic Articles/Article-1 (smooking).html" class="article-box">
+            <span class="article-title" data-lang="c1_title"></span> 
+          <p class="article-desc" data-lang="c1_desc"></p> 
+          </a> 
 
-<a href="Articles/Articles/Article-2 (AI).html" class="article-box">
-    <span class="article-title">أفضل طرق الربح من الإنترنت للمبتدئين (دليل شامل 2025)</span>
-    <p class="article-desc">
-        مقال يشرح أفضل الطرق الموثوقة للربح من الإنترنت في 2025، مع أمثلة عملية ونصائح للمبتدئين. يشمل العمل الحر، التدوين، التسويق بالعمولة، والتجارة الإلكترونية.
-    </p>
-</a>
+          <a href="Articles/Articles/Article-2 (AI).html" class="article-box"> 
+            <span class="article-title" data-lang="c2_title"></span> 
+            <p class="article-desc" data-lang="c2_desc"></p> 
+          </a> 
 
-<a href="Articles/Articles/Article-3 (غض البصر).html" class="article-box">
-    <span class="article-title">الأسرار العظيمة لغض البصر وفوائده الخفية</span>
-    <p class="article-desc">
-        هل شعرت يومًا أن ذهنك مشوش دون سبب واضح؟ هل تعلم أن مجرد نظرة قد تفتح بابًا لقلق مستمر وتشتت ذهني؟ اكتشف كيف يمكن لغض البصر أن يمنحك راحة نفسية حقيقية ويحميك من وساوس لا تنتهي!
-    </p>
-</a>
-          <a href="Articles/Articles/arabic-articles/how-to-stop-musterbation.html" class="article-box">
-    <span class="article-title">طريقة مجربة للاقلاع عن العادة السرية في ٧ ايام</span>
-    <p class="article-desc">
-     مقالة توضح خطوات عملية ومتكاملة للإقلاع عن العادة السرية خلال 7 أيام عبر تغيير التفكير، تقليل المحفزات، تحسين نمط الحياة، وبناء عادات صحية تدعم التحكم بالنفس.
-    </p>
-</a>
-          
+          <a href="Articles/Articles/Article-3 (غض البصر).html" class="article-box"> 
+            <span class="article-title" data-lang="c3_title"></span> 
+            <p class="article-desc" data-lang="c3_desc"></p> 
+          </a> 
+
+          <a href="Articles\Articles\Arabic Articles\Articl-4 (العادة السرية).html" class="article-box"> 
+            <span class="article-title" data-lang="c4_title"></span> 
+            <p class="article-desc" data-lang="c4_desc"></p> </a>
           </div>
     </p>
   </main>
@@ -115,17 +180,17 @@
   <div class="footer-divider"></div>
 
   <div class="footer-right">
-    <div class="footer-links">
-      <a href="./">Home</a>
-      <a href="Programs.html">Programs</a>
-      <a href="Articles.html">Articles</a>
-    </div>
-    <div class="footer-links">
-      <a href="About.html">About</a>
-      <a href="About.html">Contact</a>
-    </div>
-  </div>
-</footer>
+    <div class="footer-links">                                                                                     <!--start-->
+        <a href="../../../index.html" data-lang="home"></a>
+        <a href="../../../Programs.html" data-lang="programs"></a>
+        <a href="../../../Articles.html" data-lang="articles"></a>
+      </div> 
+
+      <div class="footer-links"> 
+        <a href="../../../About.html" data-lang="about"></a>
+        <a href="../../../About.html" data-lang="contact"></a>
+      </div>
+  </footer>                                                                                                          <!--end-->
 
 <div class="footerBottom">
         <p>Copyright &copy;2025; Designed by <span class="designer">Trochman</span></p>
@@ -133,6 +198,7 @@
 
 
   <script src="JavaScript/script.js"></script>
+  <script src="JavaScript/lang.js"></script>               
 </body>
 </html>
 
