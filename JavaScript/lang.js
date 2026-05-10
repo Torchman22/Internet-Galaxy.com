@@ -72,7 +72,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       }   
     }    
  
-    fetch(`./locales/${lang}.json`)    
+    const BASE_PATH = window.location.hostname.includes("github.io")
+  ? "/Internet-Galaxy.com"
+  : "";
+
+fetch(`${BASE_PATH}/locales/${lang}.json`)    
       .then(res => res.json())    
       .then(data => {    
         document.querySelectorAll("[data-lang]").forEach(el => {    
