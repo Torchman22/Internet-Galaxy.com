@@ -911,7 +911,8 @@ body {
 }
  
 .lang-menu:hover ul { 
-    display: block; 
+    opacity: 1;
+  visibility: visible; 
 } 
  
 /* ⭐ NEW: محاذاة حسب اللغة */
