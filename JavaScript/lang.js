@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       }   
     }    
  
-    fetch(`/locales/${lang}.json`)    
+    fetch(`./locales/${lang}.json`)    
       .then(res => res.json())    
       .then(data => {    
         document.querySelectorAll("[data-lang]").forEach(el => {    
