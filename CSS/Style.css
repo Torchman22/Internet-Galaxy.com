@@ -1,4 +1,129 @@
- 
+/*الجزء الخاص بالتولبار العلوية وشريط البحث*/
+
+.body {
+  margin: 0;
+  padding: 0;  
+  overflow-x: hidden;                                                              
+}
+
+/*تحديد حد ادني للfooter مع الجسم كي لا يوجد فراغ بالاسفل*/
+.content-layout {
+    min-height: calc(80vh - 150px); /* 150px مجموع ارتفاع الهيدر + الفوتر */
+}
+
+.navbar-scroll {
+  overflow: visible; /* مهم جداً */                                     
+  position: relative; /* ضروري للتعامل مع القائمة المنسدلة */                                                            
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible; /* 👈 هذا يسمح للقائمة بالظهور خارج الشريط عموديًا */
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+/*لاحظ كود navbar لا يعمل ولكن تم تركه لوقت الحاجة له*/                                                                                         /*start*/
+/*The navbar modification was not deleted and was left for when it's needed. This means if you want to modify
+ something and want the navbar to be language-neutral and animated, just type "navbar" without "normal" or "mobile".*/                         /*End*/
+.navbar {  
+  overflow: visible; /* مهم جداً */ 
+  overflow-x: auto;        /* يسمح بالتمرير الأفقي */
+  overflow-y: visible;     /* للسماح للقائمة المنسدلة بالظهور */
+  white-space: nowrap;     /* يمنع العناصر من النزول لسطر جديد */
+  -webkit-overflow-scrolling: touch; /* تمرير سلس في الموبايل */
+  scrollbar-width: none;   /* إخفاء شريط التمرير في فايرفوكس */
+}
+
+.navbar-scroll::-webkit-scrollbar,
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* إعدادات العناصر الداخلية */
+.navbar-scroll ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-scroll li, .navbar li {
+  flex: 0 0 auto;
+}                                                           
+
+.mobile_navbar {                                                          
+  position: static; /* 👈 أو ابقها relative إذا احتجت ذلك فقط */
+  overflow: visible; /* 👈 مهم جداً للسماح بخروج العناصر */
+  z-index: 1000;
+}                                                                         
+
+
+.normal_navbar,.mobile_navbar {
+  overflow: visible; /* مهم جداً */                                     
+  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                    
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/                                                 
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar {
+  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                        
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/                                                
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar .spacer {
+  flex: 1; /* ياخذ المساحة الفارغة ويدفع العناصر اللي بعده لليمين */
+}
+
+.normal_navbar li,.mobile_navbar li,.navbar li {
+  float: left;
+}
+
+.normal_navbar a,.mobile_navbar a,.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.normal_navbar a:hover,.mobile_navbar a:hover,.navbar a:hover {
+  background-color: #111;
+}
+
+/*الجزء الخاص باظهار واخفاء القائمة smart*/
+.normal_navbar,.mobile_navbar,.navbar {
+  position: fixed;                                    
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #333;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
 
 .navbar.hidden {
   transform: translateY(-100%);
