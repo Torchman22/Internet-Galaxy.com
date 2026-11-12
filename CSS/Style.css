@@ -1,101 +1,26 @@
 /*الجزء الخاص بالتولبار العلوية وشريط البحث*/
 
-.body {
-  margin: 0;
-  padding: 0;  
-  overflow-x: hidden;                                                              
-}
-
-/*تحديد حد ادني للfooter مع الجسم كي لا يوجد فراغ بالاسفل*/
-.content-layout {
-    min-height: calc(80vh - 150px); /* 150px مجموع ارتفاع الهيدر + الفوتر */
-}
-
-.navbar-scroll {
-  overflow: visible; /* مهم جداً */                                     
-  position: relative; /* ضروري للتعامل مع القائمة المنسدلة */                                                            
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-x: auto;
-  overflow-y: visible; /* 👈 هذا يسمح للقائمة بالظهور خارج الشريط عموديًا */
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  width: 100%;
-}
-
-/*لاحظ كود navbar لا يعمل ولكن تم تركه لوقت الحاجة له*/                                                                                         /*start*/
-/*The navbar modification was not deleted and was left for when it's needed. This means if you want to modify
- something and want the navbar to be language-neutral and animated, just type "navbar" without "normal" or "mobile".*/                         /*End*/
-.navbar {  
-  overflow: visible; /* مهم جداً */ 
-  overflow-x: auto;        /* يسمح بالتمرير الأفقي */
-  overflow-y: visible;     /* للسماح للقائمة المنسدلة بالظهور */
-  white-space: nowrap;     /* يمنع العناصر من النزول لسطر جديد */
-  -webkit-overflow-scrolling: touch; /* تمرير سلس في الموبايل */
-  scrollbar-width: none;   /* إخفاء شريط التمرير في فايرفوكس */
-}
-
-.navbar-scroll::-webkit-scrollbar,
-.navbar::-webkit-scrollbar {
-  display: none;
-}
-
-
-/* إعدادات العناصر الداخلية */
-.navbar-scroll ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.navbar-scroll li, .navbar li {
-  flex: 0 0 auto;
-}                                                           
-
-.mobile_navbar {                                                          
-  position: static; /* 👈 أو ابقها relative إذا احتجت ذلك فقط */
-  overflow: visible; /* 👈 مهم جداً للسماح بخروج العناصر */
-  z-index: 1000;
-}                                                                         
-
-
-.normal_navbar,.mobile_navbar {
-  overflow: visible; /* مهم جداً */                                     
-  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                    
-  list-style-type: none;
+body {
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/                                                 
-  background-color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .navbar {
-  position: fixed; /* ضروري للتعامل مع القائمة المنسدلة */                                                                        
   list-style-type: none;
   margin: 0;
   padding: 0;
-  /*overflow: hidden;*/                                                
+  overflow: hidden;
   background-color: #333;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.navbar .spacer {
-  flex: 1; /* ياخذ المساحة الفارغة ويدفع العناصر اللي بعده لليمين */
-}
-
-.normal_navbar li,.mobile_navbar li,.navbar li {
+.navbar li {
   float: left;
 }
 
-.normal_navbar a,.mobile_navbar a,.navbar a {
+.navbar a {
   display: block;
   color: white;
   text-align: center;
@@ -103,60 +28,15 @@
   text-decoration: none;
 }
 
-.normal_navbar a:hover,.mobile_navbar a:hover,.navbar a:hover {
+.navbar a:hover {
   background-color: #111;
 }
 
-/*الجزء الخاص باظهار واخفاء القائمة smart*/
-.normal_navbar,.mobile_navbar,.navbar {
-  position: fixed;                                    
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #333;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transition: transform 0.3s ease;
-}
-
-
-.navbar.hidden {
-  transform: translateY(-100%);
-}
-
-/*تعديل على النص في الشريط العلوي في الحالة العربية*/                                           /*start*/
-html[dir="rtl"] .normal_navbar a,
-html[dir="rtl"] .mobile_navbar a {
-  font-size: 18px;
-  font-weight: 600;
-}                  
-
-html[dir="rtl"] .footer-links a {
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0;
-}
-
-
-                                                                         /*end*/
-
-
-
-
-
-/* تحسين صندوق البحث */                                                        /*start*/
+/* تحسين صندوق البحث */
 .search-container {
+  margin-left: auto;
   padding-right: 20px;
-  padding-left: 20px;                                     
-  display: flex;
-  align-items: center;
 }
-
 
 .search-box {
   position: relative;
@@ -175,7 +55,7 @@ html[dir="rtl"] .footer-links a {
   transition: width 0.4s ease-in-out;
 }
 
-.search-box input[type="text"]::placeholder{
+.search-box input[type="text"]::placeholder {
   color: #aaa;
 }
 
@@ -187,23 +67,6 @@ html[dir="rtl"] .footer-links a {
   color: #888;
   font-size: 18px;
   pointer-events: none; /* لا تجعل العدسة قابلة للنقر */
-}
-
-/* ⭐ الوضع الإنجليزي (LTR) — كما هو */
-html[dir="ltr"] .search-icon {
-  right: 12px;
-  left: auto;
-}
-
-/* ⭐ الوضع العربي (RTL) — يتحول لليسار */
-html[dir="rtl"] .search-icon {
-  left: 12px;
-  right: auto;
-}                                                                                               /*end*/
-
-/*سطر برمجي لدفع العناصر لاقصى اليمين لحل مشكلة صندوق البحث في حالة عدم وجود قائمة لغة*/
-.spacer {
-  flex-grow: 1; /* هذه تدفع كل ما بعدها إلى أقصى اليمين */
 }
 
 h1 {
@@ -218,7 +81,7 @@ h1 {
   position: relative;
   width: 100%;
   height: 400px;
-  background-image: url("../Images/galaxy.jpg");
+  background-image: url("/Images/galaxy.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -289,7 +152,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px 0;  
+  padding: 20px 0;
 }
 
 /* صورة المقال */
@@ -303,7 +166,6 @@ body {
 /* محتوى المقال */
 .article-content {
   flex: 1;
-  padding-top: 12px; /* أو أي قيمة تناسبك */
 }
 
 .article-content h2 {
@@ -344,12 +206,13 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
- /* direction: غير مفعل ;*/
+ /* direction: غير مفعل;*/
 }
 
 .navbar {
   list-style: none;
   background-color: #333;
+  overflow: hidden;
   padding: 0;
   margin: 0;
 }
@@ -373,7 +236,7 @@ body {
 .page-title {
   text-align: center;
   margin-top: 30px;
-  color: #000000;
+  color: #222;
 }
 
 .articles-list {
@@ -382,7 +245,6 @@ body {
   padding: 0 20px;
 }
 
-/*هذا لصفحة Articles لانه يوجد نفسه فوق ل Programs*/
 .article-box {
   background-color: white;
   padding: 20px;
@@ -391,7 +253,6 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   border: 1px solid #ddd;
   transition: box-shadow 0.3s ease;
-  text-decoration: none;
 }
 
 .article-box:hover {
@@ -417,6 +278,7 @@ body {
   margin: 0;
   line-height: 1.6;
 }
+
 
 /*طريقة جميلة جدا لحل مشكلة المقالات العربية في صفحة بالانجليزية
 اي جعلها من اليمين لليسار دون التاثير على بقية العناصر في الصفحة باكملها 
